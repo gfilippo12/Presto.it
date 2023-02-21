@@ -1,6 +1,4 @@
 <x-layout>
 
-    
-    
 
 </x-layout>
