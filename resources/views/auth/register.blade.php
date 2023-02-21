@@ -3,12 +3,12 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-6 mx-auto">
-                <h1></h1>
+                <h1>Registrati</h1>
                 <form action="/register" method="POST">
                     @csrf
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="name">Klajdi</label>
+                            <label for="name">Nome</label>
                             <input type="name" name="name" id="name" class="form-control">
                             @error('name') 
                             <span class="small text-danger">{{ $message }}</span>
