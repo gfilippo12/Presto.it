@@ -1,1 +1,1000 @@
 @import 'bootstrap';
+
+
+.mediaViewInfo {
+    --web-view-name: Web 1366 – 1;
+    --web-view-id: Web_1366__1;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Web_1366__1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Web_1366__1 {
+    position: absolute;
+    width: 1366px;
+    height: 2229px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Web 1366 – 1;
+    --web-view-id: Web_1366__1;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Gruppo_di_maschere_2 {
+    position: absolute;
+    width: 2544px;
+    height: 1159px;
+    left: -589px;
+    top: -394px;
+    overflow: visible;
+}
+#Presto_logo {
+    left: 139px;
+    top: 20px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Accedi {
+    left: 996px;
+    top: 20px;
+    position: absolute;
+    overflow: visible;
+    width: 63px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Registrati {
+    left: 1083px;
+    top: 20px;
+    position: absolute;
+    overflow: visible;
+    width: 86px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+}
+#Raggruppa_1 {
+    position: absolute;
+    width: 34px;
+    height: 10px;
+    left: 1193px;
+    top: 27px;
+    overflow: visible;
+}
+#Linea_1 {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Linea_1 {
+    overflow: visible;
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Linea_2 {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Linea_2 {
+    overflow: visible;
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    left: 0px;
+    top: 5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Linea_3 {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Linea_3 {
+    overflow: visible;
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    left: 0px;
+    top: 10px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Prestoit__consegne_in_tutta_it {
+    left: 279px;
+    top: 223px;
+    position: absolute;
+    overflow: visible;
+    width: 810px;
+    height: 240px;
+    text-align: center;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    color: rgba(0,0,0,1);
+}
+#Raggruppa_13 {
+    position: absolute;
+    width: 168px;
+    height: 58px;
+    left: 507px;
+    top: 463px;
+    overflow: visible;
+}
+#Rettangolo_15 {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_15 {
+    position: absolute;
+    overflow: visible;
+    width: 168px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+#Vendi {
+    left: 46px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 77px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#Raggruppa_14 {
+    position: absolute;
+    width: 168px;
+    height: 58px;
+    left: 691px;
+    top: 463px;
+    overflow: visible;
+}
+#Rettangolo_15_t {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_15_t {
+    position: absolute;
+    overflow: visible;
+    width: 168px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+#Acquista {
+    left: 29px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 112px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#Le_nostre_categorie {
+    left: 139px;
+    top: 865px;
+    position: absolute;
+    overflow: visible;
+    width: 461px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    color: rgba(0,0,0,1);
+}
+#Rettangolo_5 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_5 {
+    position: absolute;
+    overflow: visible;
+    width: 260px;
+    height: 140px;
+    left: 691px;
+    top: 999px;
+}
+#Rettangolo_8 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_8 {
+    position: absolute;
+    overflow: visible;
+    width: 260px;
+    height: 140px;
+    left: 139px;
+    top: 999px;
+}
+#Rettangolo_6 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_6 {
+    position: absolute;
+    overflow: visible;
+    width: 260px;
+    height: 140px;
+    left: 967px;
+    top: 999px;
+}
+#Rettangolo_7 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_7 {
+    position: absolute;
+    overflow: visible;
+    width: 260px;
+    height: 140px;
+    left: 415px;
+    top: 999px;
+}
+#Raggruppa_2 {
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    left: 164px;
+    top: 1034px;
+    overflow: visible;
+}
+#Tecnologia {
+    left: 25px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 162px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+#Rettangolo_9 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_9 {
+    position: absolute;
+    overflow: visible;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 40px;
+}
+#Annunci_in_tecnologia {
+    left: 30px;
+    top: 46px;
+    position: absolute;
+    overflow: visible;
+    width: 152px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
+#Raggruppa_8 {
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    left: 716px;
+    top: 1034px;
+    overflow: visible;
+}
+#Sport {
+    left: 65px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+#Raggruppa_7 {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 40px;
+    overflow: visible;
+}
+#Rettangolo_10 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_10 {
+    position: absolute;
+    overflow: visible;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Annunci_in_sport {
+    left: 46px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 119px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
+#Raggruppa_6 {
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    left: 992px;
+    top: 1034px;
+    overflow: visible;
+}
+#Motori {
+    left: 54px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+#Raggruppa_5 {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 40px;
+    overflow: visible;
+}
+#Rettangolo_12 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_12 {
+    position: absolute;
+    overflow: visible;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Annunci_in_motori {
+    left: 41px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 129px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
+#Raggruppa_4 {
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    left: 440px;
+    top: 1034px;
+    overflow: visible;
+}
+#Arredo {
+    left: 53px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 105px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+#Raggruppa_3 {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 40px;
+    overflow: visible;
+}
+#Rettangolo_11 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_11 {
+    position: absolute;
+    overflow: visible;
+    width: 210px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+#Annunci_in_arredo {
+    left: 42px;
+    top: 6px;
+    position: absolute;
+    overflow: visible;
+    width: 127px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
+#delivery-presto_copia {
+    position: absolute;
+    width: 490px;
+    height: 327px;
+    left: 629px;
+    top: 1244px;
+    overflow: visible;
+}
+#Rettangolo_16 {
+    fill: transparent;
+    stroke: rgba(255,192,81,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_16 {
+    position: absolute;
+    overflow: visible;
+    width: 904px;
+    height: 350px;
+    left: 231px;
+    top: 1221px;
+}
+#Comincia_a_vendere_le_cose__ch {
+    left: 323px;
+    top: 1307px;
+    position: absolute;
+    overflow: visible;
+    width: 379px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+    text-transform: uppercase;
+}
+#Rettangolo_17 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_17 {
+    position: absolute;
+    overflow: visible;
+    width: 276px;
+    height: 57px;
+    left: 323px;
+    top: 1428px;
+}
+#Presto_dai_al_tuo_usato_una_se {
+    left: 323px;
+    top: 1377px;
+    position: absolute;
+    overflow: visible;
+    width: 261px;
+    height: 36px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#Raggruppa_17 {
+    position: absolute;
+    width: 219px;
+    height: 30px;
+    left: 352px;
+    top: 1442px;
+    overflow: visible;
+}
+#Raggruppa_16 {
+    position: absolute;
+    width: 196px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Inserisci_annuncio {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 197px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#Raggruppa_15 {
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    left: 201px;
+    top: 6px;
+    overflow: visible;
+}
+#Rettangolo_18 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rettangolo_18 {
+    position: absolute;
+    overflow: visible;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 1px;
+}
+#Text {
+    left: 5px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
+#Rettangolo_19 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_19 {
+    position: absolute;
+    overflow: visible;
+    width: 536px;
+    height: 150px;
+    left: 416px;
+    top: 1671px;
+}
+#Scarica_lapp_di_Prestoit {
+    left: 548px;
+    top: 1696px;
+    position: absolute;
+    overflow: visible;
+    width: 272px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#Unisciti_alla_nostra_grande_fa {
+    left: 570px;
+    top: 1736px;
+    position: absolute;
+    overflow: visible;
+    width: 230px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
+#Gruppo_di_maschere_3 {
+    position: absolute;
+    width: 76px;
+    height: 25px;
+    left: 599px;
+    top: 1771px;
+    overflow: visible;
+}
+#Gruppo_di_maschere_4 {
+    position: absolute;
+    width: 76px;
+    height: 25px;
+    left: 691px;
+    top: 1771px;
+    overflow: visible;
+}
+#Rettangolo_23 {
+    fill: rgba(255,192,81,1);
+}
+.Rettangolo_23 {
+    position: absolute;
+    overflow: visible;
+    width: 1366px;
+    height: 308px;
+    left: 0px;
+    top: 1921px;
+}
+#Contatti {
+    left: 398.5px;
+    top: 1941px;
+    position: absolute;
+    overflow: visible;
+    width: 78px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+#Presto_logo_b {
+    left: 398.5px;
+    top: 2084px;
+    position: absolute;
+    overflow: visible;
+    width: 138px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+#Newsletter {
+    left: 860.5px;
+    top: 1941px;
+    position: absolute;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#Link_utili {
+    left: 627.5px;
+    top: 1941px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#Lorem_ipsum_dolor_sit {
+    left: 398.5px;
+    top: 1987px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_dolor_sit_b {
+    left: 627.5px;
+    top: 2045px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_dolor_sit_ca {
+    left: 860.5px;
+    top: 2016px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_dolor {
+    left: 398.5px;
+    top: 2045px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_dolor_b {
+    left: 627.5px;
+    top: 2016px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_dolor_ca {
+    left: 627.5px;
+    top: 2103px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_dolor_cb {
+    left: 858.5px;
+    top: 1987px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum_ {
+    left: 398.5px;
+    top: 2016px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum__cc {
+    left: 627.5px;
+    top: 1987px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum__cd {
+    left: 627.5px;
+    top: 2074px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Lorem_ipsum__ce {
+    left: 860.5px;
+    top: 2045px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255,255,255,0.698);
+}
+#Rettangolo_151 {
+    fill: rgba(255,255,255,1);
+}
+.Rettangolo_151 {
+    position: absolute;
+    overflow: visible;
+    width: 184px;
+    height: 35px;
+    left: 858.5px;
+    top: 2074px;
+}
+#Indirizzo_email {
+    left: 874.5px;
+    top: 2086px;
+    position: absolute;
+    overflow: visible;
+    width: 80px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: rgba(0,0,0,0.502);
+}
+#Linea_54 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Linea_54 {
+    overflow: visible;
+    position: absolute;
+    width: 1374px;
+    height: 2px;
+    left: -8px;
+    top: 2149px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#n_2023_Prestoit__Termini_e_con {
+    left: 139px;
+    top: 2184px;
+    position: absolute;
+    overflow: visible;
+    width: 505px;
+    height: 19px;
+    text-align: left;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+}
