@@ -3,7 +3,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-6 mx-auto">
-                <h1>Accedi</h1>
+                <h1>Accedi polo polo</h1>
                 <form action="/login" method="POST">
                     @csrf
                     <div class="row g-3">
