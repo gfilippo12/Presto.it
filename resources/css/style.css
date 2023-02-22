@@ -1,6 +1,6 @@
 /* Button for Scroll UP */
 #btn-back-to-top {
-    background: linear-gradient( #F4D10B 81%);
+    background: linear-gradient(90deg, #d3be00 0%, #F4D10B 81%);
     position: fixed;
     bottom: 20px;
     right: 20px;
