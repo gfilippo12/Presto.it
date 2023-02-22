@@ -6,13 +6,13 @@
         <title>Presto.it</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+        @livewireStyles
     </head>
     <body>
 
         <x-nav></x-nav>
         
         {{ $slot }}
-
+        @livewireScripts
     </body>
 </html>
