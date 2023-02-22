@@ -4,30 +4,6 @@
         <div id="Web_1366__1" style="transform-origin: 0px 0px;">
             <img id="Gruppo_di_maschere_2" src="Gruppo_di_maschere_2.png" srcset="Gruppo_di_maschere_2.png 1x, Gruppo_di_maschere_2@2x.png 2x">
                 
-            
-            <div id="Presto_logo">
-                <span>Presto logo</span>
-            </div>
-            <div id="Accedi">
-                <span>Accedi</span>
-            </div>
-            <div id="Registrati">
-                <span>Registrati</span>
-            </div>
-            <div id="Raggruppa_1">
-                <svg class="Linea_1" viewBox="0 0 34 2">
-                    <path id="Linea_1" d="M 0 0 L 34 0">
-                    </path>
-                </svg>
-                <svg class="Linea_2" viewBox="0 0 34 2">
-                    <path id="Linea_2" d="M 0 0 L 34 0">
-                    </path>
-                </svg>
-                <svg class="Linea_3" viewBox="0 0 34 2">
-                    <path id="Linea_3" d="M 0 0 L 34 0">
-                    </path>
-                </svg>
-            </div>
             <div id="Prestoit__consegne_in_tutta_it">
                 <span>Presto.it <br>consegne in tutta italia</span>
             </div>
