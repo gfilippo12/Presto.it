@@ -1,6 +1,7 @@
 <x-layout>
 
-    
+        
+
         <div id="Web_1366__1" style="transform-origin: 0px 0px;">
             <img id="Gruppo_di_maschere_2" src="Gruppo_di_maschere_2.png" srcset="Gruppo_di_maschere_2.png 1x, Gruppo_di_maschere_2@2x.png 2x">
                 
