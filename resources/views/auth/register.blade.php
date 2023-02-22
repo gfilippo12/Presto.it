@@ -30,7 +30,7 @@
                         </div>
                         <div class="col-12">
                             <label for="password_confirmation">Conferma Password</label>
-                            <input type="password_confirmation" name="password_confirmation" id="password_confirmation" class="form-control">
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
                             @error('password_confirmation') 
                             <span class="small text-danger">{{ $message }}</span>
                             @enderror
