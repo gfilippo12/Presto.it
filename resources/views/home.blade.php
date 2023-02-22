@@ -1,6 +1,13 @@
 <x-layout>
 
-    
+        {{-- Button for Scroll Up --}}
+            <button
+            type="button"
+            class="btn btn-floating btn-lg"
+            id="btn-back-to-top">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+            </button>
+
         <div id="Web_1366__1" style="transform-origin: 0px 0px;">
             <img id="Gruppo_di_maschere_2" src="Gruppo_di_maschere_2.png" srcset="Gruppo_di_maschere_2.png 1x, Gruppo_di_maschere_2@2x.png 2x">
                 
@@ -146,6 +153,7 @@
             <img id="Gruppo_di_maschere_4" src="Gruppo_di_maschere_4.png" srcset="Gruppo_di_maschere_4.png 1x, Gruppo_di_maschere_4@2x.png 2x">
                 
             
+            {{-- Footer --}}
             <svg class="Rettangolo_23">
                 <rect id="Rettangolo_23" rx="0" ry="0" x="0" y="0" width="1366" height="308">
                 </rect>
@@ -209,6 +217,7 @@
             <div id="n_2023_Prestoit__Termini_e_con">
                 <span>© 2023 Presto.it / Termini e condizioni / Informativa e privacy</span>
             </div>
+            {{-- End Footer --}}
         </div>
         
         
