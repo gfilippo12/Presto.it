@@ -2,7 +2,7 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="">
+            <div class="col-6 mx-auto">
                 <h1>Crea il tuo annuncio</h1>
 
                     @if (session()->has('message'))
