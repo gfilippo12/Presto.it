@@ -7,8 +7,35 @@
     display: none;
     z-index: 999;
 }
+/* Shape */
+.custom-shape-divider-bottom-1677180806 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1677180806 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+}
+
+.custom-shape-divider-bottom-1677180806 .shape-fill {
+    fill: #FFFFFF;
+}
 
 
+body {
+    background-image: url("/public/img/bg-presto.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .mediaViewInfo {
     --web-view-name: Web 1366 – 1;
     --web-view-id: Web_1366__1;
