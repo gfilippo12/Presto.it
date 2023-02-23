@@ -16,10 +16,11 @@ class AnnouncementController extends Controller
     {
         return view('announcements.show', compact('announcement'));
     }
-    public function indexAnnouncements()
+
+    public function indexAnnouncement()
     {
-        $announcements = Announcement::all();
-        return view('announcements.index', compact('announcement'));
+        $announcements = Announcement::paginate(10);
+        return view('announcements.index', compact('announcements'));
     }
 
 }
