@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontController::class, 'home'])->name('home');
 Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
 
-Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement'])->middleware('auth')->name('announcements.create'); 
+Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement'])->middleware('auth')->name('announcements.create');
+
+Route::get('/dettaglio/annuncio/{announcement}',[AnnouncementController::class, 'showAnnouncement'])->middleware('auth')->name('announcements.show');
 
 // Rotta di prova
 Route::get('/michele', function () {

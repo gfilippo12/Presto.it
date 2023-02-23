@@ -11,4 +11,9 @@ class AnnouncementController extends Controller
         return view('announcements.create');
     }
 
+    public function showAnnouncement(Announcement $announcement)
+    {
+        return view('announcements.show', compact('announcement'));
+    }
+
 }

@@ -21,14 +21,14 @@
                                 <p class="card-text">{{ $announcement->price }}</p>
                                 <a href="" class="btn btn-primary shadow">Visualizza</a>
                                 <a href="" class="my-2 border-top pt-2 border-dark card-link shadow btn btn-success">Categoria: {{ $announcement->category->name }}</a>
-                                <p class="car-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name }}</p>
+                                <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
                             </div>
                         </div>
                     </div>
                 @empty
                     <div class="col-12">
                         <p class="h1">Non sono presenti annunci per questa categoria!</p>
-                        <p class="h2">Pubblicane uno: <a href="{{ route('announcements.create') }}" class="btn btn-success shadow"></a></p>
+                        <p class="h2">Pubblicane uno: <a href="{{ route('announcements.create') }}" class="btn btn-success shadow">Pubblica!</a></p>
                     </div>
                 @endforelse
                 </div>
