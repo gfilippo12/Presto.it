@@ -10,7 +10,7 @@
     </head>
     <body>
 
-        <x-nav></x-nav>
+        <x-nav />
         
         {{ $slot }}
         @livewireScripts

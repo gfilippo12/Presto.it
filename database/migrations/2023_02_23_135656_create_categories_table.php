@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Category;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,14 +12,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('annuncements', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('body');
-            $table->decimal('price', 8, 2);
-
+            $table->string('name');
             $table->timestamps();
         });
+
+        $categories = ['Motori', 'Informatica', 'Tecnologia', 'Libri', 'Giochi', 'Sport', 'Immobili', 'Telefoni', 'Arredamento'];
+
+        foreach ($categories as $category) {
+            Category::create(['name'=>$category]);
+        }
     }
 
     /**
@@ -26,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('annuncements');
+        Schema::dropIfExists('categories');
     }
 };

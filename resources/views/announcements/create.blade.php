@@ -1,9 +1,9 @@
- <x-layout>
+<x-layout>
     <div class="container">
         <divclass="row">
             <div class="col-12">
-                <livewiew:create-announcement />
+                <livewire:create-announcement />
             </div>
         </div>
     </div>
- </x-layout>
+</x-layout>
