@@ -20,7 +20,7 @@ Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->n
 Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement'])->middleware('auth')->name('announcements.create');
 
 Route::get('/dettaglio/annuncio/{announcement}',[AnnouncementController::class, 'showAnnouncement'])->middleware('auth')->name('announcements.show');
-
+Route::get('/tutti/annunci',[AnnouncementController::class, 'indexAnnouncement'])->middleware('auth')->name('announcements.index');
 // Rotta di prova
 Route::get('/michele', function () {
     return view('michele');
