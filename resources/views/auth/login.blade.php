@@ -2,8 +2,8 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6 mx-auto">
-                <h1>Accedi</h1>
+            <div class="col-6 mx-auto bgh1 rounded">
+                <h1 class="text-dark">Accedi</h1>
                 <form action="/login" method="POST">
                     @csrf
                     <div class="row g-3">
@@ -22,7 +22,7 @@
                             @enderror
                         </div>
                         <div>
-                            <button class="btn btn-primary">Accedi</button>
+                            <button class="btn btn-warning">Accedi</button>
                         </div>
                     </div>
                 </form>

@@ -1,38 +1,29 @@
-#bg {
-    background-color: var(--bs-warning);
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* Bg for H1 */
+.bgh1 {
+    
+    background: linear-gradient(177deg, #FFCA61 0%, #FA8802 100%);
 }
+
+/* Annunci Recenti */
+#recenti {
+    height: auto;
+}
+
 
 
 /* Button for Scroll UP */
 #btn-back-to-top {
-    background: linear-gradient(90deg, #d3be00 0%, #F4D10B 81%);
+    background: linear-gradient(177deg, #FFCA61 0%, #FA8802 100%);
     position: fixed;
     bottom: 20px;
     right: 20px;
     display: none;
     z-index: 999;
 }
-/* Shape */
-.custom-shape-divider-bottom-1677180806 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1677180806 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 127px;
-}
-
-.custom-shape-divider-bottom-1677180806 .shape-fill {
-    fill: #FFFFFF;
-}
-
 
 body {
     background-image: url("/public/img/bg-presto.jpeg");
@@ -40,6 +31,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: 'Bebas Neue';
 }
 .mediaViewInfo {
     --web-view-name: Web 1366 – 1;
@@ -281,7 +273,7 @@ body {
     color: rgba(0,0,0,1);
 }
 #Rettangolo_5 {
-    fill: rgba(255,192,81,1);
+    fill: rgb(255, 192, 81);
 }
 .Rettangolo_5 {
     position: absolute;

@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Presto.it</a>
+        <a class="navbar-brand fw-bold" href='{{route('home')}}'>Presto.it</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href='{{route('home')}}'>Home</a>
                 </li>
 
 
@@ -17,20 +17,20 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     @foreach ($categories as $category)
-                        <li><a class="dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{ $category->name }}</a></li>
+                        <li><a class="dropdown-item" href={{ route('categoryShow', compact('category')) }}>{{ $category->name }}</a></li>
                         <li><hr class="dropdown-divider"></li>
                     @endforeach
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">Annunci</a>
+                <a class="nav-link" area-current="page" href={{route('announcements.index')}}>Annunci</a>
             </li>
             @guest
             <li class="nav-item">
-                <a class="nav-link" href="/login">Accedi</a>
+                <a class="nav-link fw-bold " href="/login">Accedi</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/register">Registrati</a>
+            <li class="nav-item fw-bold ">
+                <a class="nav-link " href="/register">Registrati</a>
             </li>
             
             @else
@@ -47,7 +47,7 @@
                     <li>
                         <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="nav-link">Esci</button>
+                        <button type="submit" class="nav-link btn btn-warning shadow">Esci</button>
                         </form>
                     </li>
                 </ul>

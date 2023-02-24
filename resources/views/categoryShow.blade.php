@@ -1,7 +1,7 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-gradient bg-success shadow mb-4">
+    <div class="container-fluid p-5 bgh1 shadow mb-4">
         <div class="row">
-            <div class="col-12 text-light p-5">
+            <div class="col-12 text-dark p-5">
                 <h1 class="display-2">Esplora la categoria {{ $category->name }}</h1>
             </div>    
         </div> 
@@ -19,8 +19,8 @@
                                 <h5 class="card-title">{{ $announcement->title }}</h5>
                                 <p class="card-text">{{ $announcement->body }}</p>
                                 <p class="card-text">{{ $announcement->price }}</p>
-                                <a href="" class="btn btn-primary shadow">Visualizza</a>
-                                <a href="" class="my-2 border-top pt-2 border-dark card-link shadow btn btn-success">Categoria: {{ $announcement->category->name }}</a>
+                                <a href="" class="btn btn-warning shadow">Visualizza</a>
+                                <a href="" class="my-2 border-top pt-2 border-dark card-link shadow btn btn-dark">Categoria: {{ $announcement->category->name }}</a>
                                 <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
                             </div>
                         </div>
@@ -28,13 +28,14 @@
                 @empty
                     <div class="col-12">
                         <p class="h1">Non sono presenti annunci per questa categoria!</p>
-                        <p class="h2">Pubblicane uno: <a href="{{ route('announcements.create') }}" class="btn btn-success shadow">Pubblica!</a></p>
+                        <p class="h2">Pubblicane uno: <a href="{{ route('announcements.create') }}" class="btn btn-warning shadow">Pubblica!</a></p>
                     </div>
                 @endforelse
                 </div>
             </div>
         </div>
     </div>
+
     
     
     {{-- Button for Scroll Up --}}

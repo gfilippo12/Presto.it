@@ -19,7 +19,7 @@ class AnnouncementController extends Controller
 
     public function indexAnnouncement()
     {
-        $announcements = Announcement::paginate(10);
+        $announcements = Announcement::paginate(5);
         return view('announcements.index', compact('announcements'));
     }
 

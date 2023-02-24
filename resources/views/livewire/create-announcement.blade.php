@@ -2,8 +2,8 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6 mx-auto">
-                <h1>Crea il tuo annuncio</h1>
+            <div class="col-6 mx-auto bgh1 rounded">
+                <h1 class="text-white">Crea il tuo annuncio</h1>
 
                     @if (session()->has('message'))
                         <div class="flex flex-row justify-center my-2 alert alert-success">
@@ -14,7 +14,7 @@
                     <form wire:submit.prevent="store">
                         @csrf
 
-                        <div class="mb-3">
+                        <div class="mb-3 ">
                             <label for="title">Titolo Annuncio</label>
                             <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror">
                             @error('title')
@@ -22,7 +22,7 @@
                             @enderror
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 ">
                             <label for="body">Descrizione</label>
                             <textarea wire:model="body" type="text" class="form-control @error('body') is-invalid @enderror"></textarea>
                             @error('body')
@@ -30,7 +30,7 @@
                             @enderror
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 ">
                             <label for="price">Prezzo</label>
                             <input wire:model="price" type="number" class="form-control @error('price') is-invalid @enderror">
                             @error('price')
@@ -38,7 +38,7 @@
                             @enderror
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 ">
                             <label for="category">Categoria</label>
                             <select wire:model.defer="category" id="category" class="form-control">
                             <option value="">Scegli la categoria</option>
@@ -48,7 +48,7 @@
                             </select>
                         </div>
 
-                            <button type="submit" class="btn btn-primary shadow px-4 py-2">
+                            <button type="submit" class="btn btn-warning shadow-lg px-4 py-2">
                                 Crea
                             </button>
                         
