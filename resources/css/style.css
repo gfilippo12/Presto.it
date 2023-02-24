@@ -1,3 +1,8 @@
+#bg {
+    background-color: var(--bs-warning);
+}
+
+
 /* Button for Scroll UP */
 #btn-back-to-top {
     background: linear-gradient(90deg, #d3be00 0%, #F4D10B 81%);
@@ -45,12 +50,7 @@ body {
 :root {
     --web-view-ids: Web_1366__1;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-}
+
 #Web_1366__1 {
     position: absolute;
     width: 1366px;

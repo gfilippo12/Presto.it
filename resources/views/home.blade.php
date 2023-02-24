@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 mx-auto mt-5 ">
-                <h1 class=" text-center d-flex justify-content-center fw-bold mt-5 border border-secondary border-2 rounded" >PRESTO.IT <br> CONSEGNE IN TUTTA ITALIA</h1>
+            <div class="col-12  mx-auto pt-5 ">
+                <h1 class=" text-center text-white d-flex justify-content-center fw-bold mt-5 border  rounded" id="bg">PRESTO.IT <br> CONSEGNE IN TUTTA ITALIA</h1>
             </div>
             <div class="custom-shape-divider-bottom-1677180806">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
