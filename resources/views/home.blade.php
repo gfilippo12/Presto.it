@@ -5,7 +5,7 @@
         <x-nav></x-nav>
         <div class="row">
                 <div class="col-12 mx-auto ">
-                    <h1 class="first-text"><span class="tracking-in-contract-bck">PRESTO.IT</span><br> CONSEGNE IN <br>TUTTA ITALIA</h1>
+                    <h1 class="first-text"><span class="tracking-in-contract-bck ">PRESTO.IT</span><br> CONSEGNE IN <br>TUTTA ITALIA</h1>
                     <div class="d-grid gap-2 d-md-block ">
                         <a href="{{ route('announcements.create')}}" class="heartbeat btn btn-outline-warning text-white border border-light border-3" id="button1">Vendi!</a>
                         <a href="{{route('announcements.index')}}" class=" heartbeat btn btn-outline-warning text-white border border-light border-3" id="button2">Acquista!</a>
