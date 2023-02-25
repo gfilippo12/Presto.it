@@ -1,14 +1,17 @@
 <x-layout>
     
+
+    
     <div class="container-fluid" id="bgContainer">
+        <x-nav />
         <div class="row">
-            <div class="col-12 mx-auto">
-                <h1 class=" text-center text-white d-flex justify-content-center mb-5 mt-5 pb-3 pt-3 fw-bold border rounded border-warning border-opacity-50 bgh1" >PRESTO.IT <br> CONSEGNE IN TUTTA ITALIA</h1>
+                <div class="col-12 mx-auto ">
+                    <h1 class="first-text">PRESTO.IT <br> CONSEGNE IN <br>TUTTA ITALIA</h1>
+                </div>
             </div>
         </div>
+   
     </div>
-    
-    
 
     <div class="container">
         <div class="row">

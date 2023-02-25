@@ -34,6 +34,7 @@
     background-size: cover;
     height: 768px;
     width: auto;
+    margin-top: 0px;
 }
 
 
@@ -41,6 +42,23 @@ body {
     font-family: 'Bebas Neue';
 }
 
+.first-text{
+    text-align: left;
+    font-size: 110px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 152px;
+    margin-left: 139px;
+    width: 809px;
+    height: 396px;
+}
+
+#nav{
+    height: 66px;
+    box-shadow: 0px 7px 10px #00000029;
+    border-radius: 0px 0px 25px 0px;
+    background-color: white;
+}
 
 .mediaViewInfo {
     --web-view-name: Web 1366 – 1;
