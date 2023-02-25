@@ -28,7 +28,7 @@
 
 /* BG for Container */
 #bgContainer {
-    background-image: url("/public/img/bg-presto.jpg");
+    background: url("/public/bg-presto.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
