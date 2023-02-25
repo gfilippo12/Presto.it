@@ -1,5 +1,8 @@
 <x-layout>
-    <div class="container-fluid p-5 bgh1 shadow mb-4">
+
+
+    <div class="container-fluid p-5 bgh1 shadow mb-4 g-0">
+        <x-nav></x-nav>
         <div class="row">
             <div class="col-12 text-dark p-5">
                 <h1 class="display-2">I Nostri Annunci</h1>

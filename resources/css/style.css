@@ -1,19 +1,40 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+/* Logo */
+#logo {
+    font-family: 'Bebas Neue';
+    color:#FA8802;
+}
+
 
 
 /* Bg for H1 */
 .bgh1 {
-    
     background: linear-gradient(177deg, #FFCA61 0%, #FA8802 100%);
 }
 
 /* Annunci Recenti */
 #recenti {
+    text-align: left;
     height: auto;
+    margin-top: 97px;
+    margin-left: 139px;
+    font-size: 60px;
+    letter-spacing: 0px;
 }
+/* Button Vendi e Acquista */
+#button1 {
+    font-family: 'Lato', sans-serif;
+    margin-left: 139px;
 
-
+}
+#button2 {
+    font-family: 'Lato', sans-serif;
+    margin-left: 16px;
+    
+}
 
 /* Button for Scroll UP */
 #btn-back-to-top {
@@ -37,28 +58,35 @@
     margin-top: 0px;
 }
 
-
+/* Body */
 body {
     font-family: 'Bebas Neue';
 }
 
+/* Scritta PRESTO.IT */
 .first-text{
     text-align: left;
     font-size: 110px;
     letter-spacing: 0px;
     color: #FFFFFF;
-    margin-top: 152px;
+    margin-top: 86px;
     margin-left: 139px;
     width: 809px;
     height: 396px;
 }
-
+/* Navbar */
 #nav{
     height: 66px;
     box-shadow: 0px 7px 10px #00000029;
     border-radius: 0px 0px 25px 0px;
-    background-color: white;
+    width:100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    
 }
+
+
+
 
 .mediaViewInfo {
     --web-view-name: Web 1366 – 1;
