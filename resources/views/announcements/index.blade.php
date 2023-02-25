@@ -1,8 +1,8 @@
 <x-layout>
-
+    {{-- Navbar --}}
+    <x-nav></x-nav>
 
     <div class="container-fluid p-5 bgh1 shadow mb-4 g-0">
-        <x-nav></x-nav>
         <div class="row">
             <div class="col-12 text-dark p-5">
                 <h1 class="display-2">I Nostri Annunci</h1>
@@ -10,10 +10,10 @@
         </div> 
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 mx-auto">
-                <p class="h2 my-2 fw-bold text-center text-white d-flex justify-content-center mb-5 mt-5 pb-3 pt-3 border rounded border-warning border-opacity-50 bgh1" id="recenti">Annunci Recenti</p>
+                <p class="h2 my-2 fw-bold text-center text-white d-flex justify-content-center mb-5 mt-5 pb-3 pt-3 border rounded border-warning border-opacity-50 bgh1">Annunci Recenti</p>
             </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-lg-4 col-md-6 col-sm-10 my-4 d-flex justify-content-center">
