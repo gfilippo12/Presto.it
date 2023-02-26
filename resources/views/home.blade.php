@@ -23,7 +23,7 @@
             </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-lg-4 col-md-6 col-sm-10 my-4 d-flex justify-content-center">
-                        <div class="card shadow" style="width: 18rem">
+                        <div class="card shadow-lg" style="width: 18rem">
                             <img src="https://picsum.photos/200" alt="" class="card-img-top p-3 rounded">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $announcement->title }}</h5>

@@ -12,8 +12,8 @@
 
 /* Bg for H1 */
 .bgh1 {
-    background: white;
-    margin-top: 150px;
+    background: linear-gradient(177deg, #FFCA61 0%, #FA8802 100%);
+    
 } 
 
 /* Annunci Recenti */
@@ -62,12 +62,11 @@
 /* BG for Authentication */
 #bgContainer-auth {
     background: url("/public/bg-auth.svg");
+    background-position:center;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 768px;
-    width: auto; 
-    margin-top: 0px;
+    background-size:auto;
+    
+    
 }
 
 /* Body */
