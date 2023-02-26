@@ -1,5 +1,6 @@
 <x-layout>
 
+<div class="container-fluid g-0" id="bgContainer-auth">
     <div class="container mt-5">
         <div class="row">
             <div class="col-6 mx-auto bgh1 rounded">
@@ -43,5 +44,6 @@
             </div>
         </div>
     </div>
-    
+</div>
+
 </x-layout>
