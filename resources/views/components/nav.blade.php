@@ -47,10 +47,6 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                        <form action="/logout" method="POST">
-                        @csrf
-                        <button type="submit" class="nav-link btn btn-warning shadow">Esci</button>
-                        </form>
                         @if (Auth::user()->is_revisor)
                         <li class="nav-item"> 
                             <a class="nav-link btn-outline-success btn-sm position-relative"
@@ -63,6 +59,10 @@
                             </a>
                         </li>
                         @endif
+                        <form action="/logout" method="POST">
+                        @csrf
+                            <button type="submit" class="nav-link btn btn-warning shadow">Esci</button>
+                        </form>
                     </li>
                 </ul>
             </li>
