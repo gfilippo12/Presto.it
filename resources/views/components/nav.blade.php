@@ -36,18 +36,7 @@
                 <a class="nav-link" href="{{ route('announcements.create')}}">Crea Annuncio</a>
             </li>
             <!--  Inizio Revisore ! --> 
-    @if (Auth::user()->is_revisor)
-    <li class="nav-item"> 
-        <a calss="nav-link btn-outline-success btn-sm position-relative"
-        aria-current="page"  href="{{route('revisor.index')}}">
-        Zona Revisor
-        <span class="position-absolute top-0 start-100 translate-middle badgerounded-pill bg-danger">
-            {{App\Models\Announcement::toBeRevisionedCount()}}
-            <span class="visually-hidden">unread message </span>
-        </span>
-        </a>
-    </li>
-    @endif
+
 
  <!-- Fine Revisore ! --> 
   
@@ -62,6 +51,18 @@
                         @csrf
                         <button type="submit" class="nav-link btn btn-warning shadow">Esci</button>
                         </form>
+                        @if (Auth::user()->is_revisor)
+                        <li class="nav-item"> 
+                            <a class="nav-link btn-outline-success btn-sm position-relative"
+                            aria-current="page"  href="{{route('revisor.index')}}">
+                            Zona Revisor
+                            <span class="position-absolute top-0 start-100 translate-middle badgerounded-pill rounded-5 bg-warning">
+                                {{App\Models\Announcement::toBeRevisionedCount()}}
+                                <span class="visually-hidden">unread message </span>
+                            </span>
+                            </a>
+                        </li>
+                        @endif
                     </li>
                 </ul>
             </li>
