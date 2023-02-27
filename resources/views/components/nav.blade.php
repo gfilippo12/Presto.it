@@ -35,6 +35,23 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('announcements.create')}}">Crea Annuncio</a>
             </li>
+            <!--  Inizio Revisore ! --> 
+    @if (Auth::user()->is_revisor)
+    <li class="nav-item"> 
+        <a calss="nav-link btn-outline-success btn-sm position-relative"
+        aria-current="page"  href="{{route('revisor.index')}}">
+        Zona Revisor
+        <span class="position-absolute top-0 start-100 translate-middle badgerounded-pill bg-danger">
+            {{App\Models\Announcement::toBeRevisionedCount()}}
+            <span class="visually-hidden">unread message </span>
+        </span>
+        </a>
+    </li>
+    @endif
+
+ <!-- Fine Revisore ! --> 
+  
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ Auth::user()->name }}
