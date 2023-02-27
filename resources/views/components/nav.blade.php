@@ -49,10 +49,10 @@
                     <li>
                         @if (Auth::user()->is_revisor)
                         <li class="nav-item"> 
-                            <a class="nav-link btn-outline-success btn-sm position-relative"
+                            <a class="nav-link btn-outline btn btn-warning shadow mb-2"
                             aria-current="page"  href="{{route('revisor.index')}}">
                             Zona Revisor
-                            <span class="position-absolute top-0 start-100 translate-middle badgerounded-pill rounded-5 bg-warning">
+                            <span class="position-absolute top-0 start-100 translate-middle rounded-5 bg-warning">
                                 {{App\Models\Announcement::toBeRevisionedCount()}}
                                 <span class="visually-hidden">unread message </span>
                             </span>
