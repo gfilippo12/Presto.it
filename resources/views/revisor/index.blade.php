@@ -1,4 +1,5 @@
 <x-layout>
+    {{-- Navbar --}}
     <x-nav></x-nav>
     <div class="container-fluid p-5 bgh1 shadow mb-4 g-0">
         <div class="row">
