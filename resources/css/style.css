@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
+
+*{
+cursor: pointer;}
+
+
 /* Logo */
 #logo {
     font-family: 'Bebas Neue';
     color:#FA8802;
 }
-
 
 
 /* Bg for H1 */
@@ -72,6 +76,7 @@
 /* Body */
 body {
     font-family: 'Bebas Neue';
+    overflow-x: hidden;
 }
 
 /* Scritta PRESTO.IT */
@@ -93,7 +98,6 @@ body {
     width:100%;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    
 }
 
 /* Animations */
