@@ -9,7 +9,7 @@
         </div> 
     </div>
     
-    @if($announcemet_to_check)
+    @if($announcement_to_check)
     <div class="container">
         <div class="row">
             <div class="col-12">
