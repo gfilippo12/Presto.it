@@ -49,7 +49,4 @@
             <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
 
-            
-
-
 </x-layout>
