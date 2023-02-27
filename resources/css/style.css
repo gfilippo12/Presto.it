@@ -102,8 +102,8 @@ body {
 }
 
 .heartbeat {
-	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
+	-webkit-animation: heartbeat 1.6s ease-in-out 2 both;
+	        animation: heartbeat 1.6s ease-in-out 2 both;
 }
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
@@ -137,6 +137,8 @@ body {
     transform: none;
     }
     } 
+
+
 
 /**
  * ----------------------------------------
@@ -211,6 +213,7 @@ body {
               animation-timing-function: ease-out;
     }
   }
+  
   
 
 /**
