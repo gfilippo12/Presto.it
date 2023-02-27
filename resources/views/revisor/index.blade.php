@@ -1,17 +1,15 @@
 <x-layout>
-    
-    <x-nav></x-nav>
-
     <div class="container-fluid p-5 bgh1 shadow mb-4 g-0">
         <div class="row">
             <div class="col-12 text-dark p-5">
-                <h1 class="display-2">{{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'non ci sono annunci da revisionare'}}
+                <h1 class="display-2">
+                    {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'non ci sono annunci da revisionare'}}
                     </h1>
             </div>    
         </div> 
     </div>
     
-    @if(announcemet_to_check)
+    @if($announcemet_to_check)
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -21,6 +19,7 @@
                             <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
                          </div>
+
                          <div class="carousel-item">
                             <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
@@ -40,6 +39,7 @@
                             <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
                          </div>
+                         
                          <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -76,8 +76,9 @@
                 @endif
           
                 
-               
     
+               
+    // * Button 
     
             <button
             type="button"
@@ -86,5 +87,5 @@
             <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
 
-
+            
 </x-layout>
