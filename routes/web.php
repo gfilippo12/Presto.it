@@ -1,6 +1,8 @@
 <?php
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\RevisorController;
+use Illuminate\Routing\Controllers\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +23,19 @@ Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement
 
 Route::get('/dettaglio/annuncio/{announcement}',[AnnouncementController::class, 'showAnnouncement'])->middleware('auth')->name('announcements.show');
 Route::get('/tutti/annunci',[AnnouncementController::class, 'indexAnnouncement'])->middleware('auth')->name('announcements.index');
+
+
+//* Home revisore
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
+
+//* Accetta annuncio
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');
+
+//* Rifiuta Annuncio
+Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor.reject_announcement');
+
+//* Richiedi di diventare revisore
+Route::get('/richiesta/revisore', [RevisorController::class,'becomeRevisor'])->middleware('isRevisor')->name('become.revisor');
+
+//* Rendi Utente revisore
+Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');

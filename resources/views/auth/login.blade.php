@@ -1,8 +1,10 @@
 <x-layout>
 
-    <div class="container mt-5">
+<div class="container-fluid g-0" id="bgContainer-auth">
+    <x-nav></x-nav>
+    <div class="container">
         <div class="row">
-            <div class="col-6 mx-auto bgh1 rounded">
+            <div class="col-6 mx-auto bgh1 rounded opacity-75">
                 <h1 class="text-dark">Accedi</h1>
                 <form action="/login" method="POST">
                     @csrf
@@ -29,5 +31,6 @@
             </div>
         </div>
     </div>
+</div>
 
 </x-layout>
