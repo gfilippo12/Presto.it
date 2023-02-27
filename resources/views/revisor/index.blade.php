@@ -74,12 +74,9 @@
                     </div>
                 </div>
                 @endif
-          
                 
     
-               
-    // * Button 
-    
+            {{-- Btn for Scroll Up --}}
             <button
             type="button"
             class="btn btn-floating btn-lg"
