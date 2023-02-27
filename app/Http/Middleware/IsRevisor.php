@@ -2,8 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use Mockery\Matcher\Closure;
-use GuzzleHttp\Psr7\Response;
+use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -18,7 +17,7 @@ class IsRevisor
      * @param  \Closure $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
         if (Auth::check() && Auth::user()->is_revisor) {
             return $next($request);
