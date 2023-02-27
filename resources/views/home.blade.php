@@ -1,8 +1,8 @@
 <x-layout>
-    
 
-    
-    <div class="container-fluid" id="bgContainer">
+    {{-- <div class="container-fluid bg-success">
+    </div> --}}
+    <div class="container-fluid g-0" id="bgContainer">
         <x-nav />
         <div class="row">
                 <div class="col-12 mx-auto ">
