@@ -64,19 +64,28 @@ cursor: pointer;}
 }
 
 /* BG for Authentication */
-#bgContainer-auth {
+/* #bgContainer-auth {
     background: url("/public/bg-auth.svg");
     background-position:center;
     background-repeat: no-repeat;
     background-size:auto;
     
     
-}
+} */
 
 /* Body */
 body {
     font-family: 'Bebas Neue';
     overflow-x: hidden;
+    height: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+html{
+    height: 100%;
 }
 
 /* Scritta PRESTO.IT */

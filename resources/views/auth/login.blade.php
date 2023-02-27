@@ -1,10 +1,10 @@
 <x-layout>
 
-<div class="container-fluid g-0" id="bgContainer-auth">
+<div class="container-fluid g-0">
     <x-nav></x-nav>
-    <div class="container">
+    <div class="container d-flex justify-content-between">
         <div class="row">
-            <div class="col-6 mx-auto bgh1 rounded opacity-75">
+            <div class="col-6 mx-auto border p-3 rounded">
                 <h1 class="text-dark">Accedi</h1>
                 <form action="/login" method="POST">
                     @csrf
