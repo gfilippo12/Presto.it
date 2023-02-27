@@ -9,7 +9,7 @@
         </div> 
     </div>
     
-    @if($announcemet_to_check)
+    @if($announcement_to_check)
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -51,12 +51,12 @@
                          <div>
                             <h5 class="card-title">Titilo: {{$announcement_to_check->title}}</h5>
                             <p class="card-text">Descrizione: {{$announcement_to_check->body}}</p>
-                            <p class="card-footer">Publicato il: {{$announcement_to_check->created_at->form()}}</p>
+                            <p class="card-footer">Publicato il: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
                          </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <form action="{{route('revisor.accept_announcement', ['announcemement'=>$announcement_to_check])}}" method="POST">
+                            <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
                                 @csrf
                                 @method('PATCH')
                                 <button type="submit" class="btn btn-success shadow">Accetta</button>
@@ -65,7 +65,7 @@
 
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <form action="{{route('revisor.reject_announcement', ['announcemement'=>$announcement_to_check])}}" method="POST">
+                                <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
                                     @csrf
                                     @method('PATCH')
                                     <button type="submit" class="btn btn-success shadow">Rifiuta</button>
@@ -74,12 +74,9 @@
                     </div>
                 </div>
                 @endif
-          
                 
     
-               
-    // * Button 
-    
+            {{-- Btn for Scroll Up --}}
             <button
             type="button"
             class="btn btn-floating btn-lg"
