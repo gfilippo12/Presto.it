@@ -1,5 +1,7 @@
 
-    @foreach ($announcements as $announcement)
+
+
+    @foreach ($annunci as $announcement)
     <div class="col-lg-4 col-md-6 col-sm-10 my-4 d-flex justify-content-center">
         <div class="card bgh1 shadow-lg" style="width: 18rem">
             <img src="https://picsum.photos/200" alt="" class="card-img-top p-3 rounded">
