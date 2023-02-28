@@ -25,17 +25,7 @@ class FrontController extends Controller
     }
 
 
-    public function becomeRevisor() 
-    {
-        Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user())); //* da vedere
-        return redirect('/')->back()->with('message', 'Complimenti! hai chiesto di diventare revisore in maniera corretta');
-    }
-
-    public function makeRevisor(User $user) 
-    {
-        Artisan::call('presto:makeUserRevisor' , ["email"=>$user->email]);
-        return redirect ('/')->with('message', 'Complimenti! l\'utente è diventato revisore');
-    }
+    
 
 //* VEDERE  BECOME REVISOR  SU VIDEO 3 .... 20:35 REVISOR CONTROLLER (NEL VIDEO 10 LI METTE QUI DENTRO 4:15)!!
 
