@@ -19,3 +19,5 @@ yarn-error.log
 /.vscode
 /public/img
 /storage/*.index
+/storage/announcements.index-shm
+/storage/announcements.index-wal
