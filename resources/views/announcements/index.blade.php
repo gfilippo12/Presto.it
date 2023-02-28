@@ -33,9 +33,7 @@
                     <div class="col-12">
                         <div class="alert alert-warning py-3 shadow">
                             <p class="lead">Non ci sono annunci per questa ricerca. prova a cambiare nome</p>
-
                         </div>
-
                     </div>
                 @endforelse
                 {{$announcements->links()}}
