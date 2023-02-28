@@ -26,7 +26,7 @@ class Announcement extends Model
             'body'=>$this->body,
             'category'=> $category,
         ];
-        return $aray;
+        return $array;
     }
 
     public function category()
