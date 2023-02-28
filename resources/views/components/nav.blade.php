@@ -35,11 +35,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('announcements.create')}}">Crea Annuncio</a>
             </li>
-            <!--  Inizio Revisore ! --> 
-
-
- <!-- Fine Revisore ! --> 
-  
+            
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,10 +63,6 @@
                 </ul>
             </li>
             @endguest
-
-            <!- form search ->
-         
-            
 
             <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
                 <input name="searched" class="form-control me-2" type="search" placeholder="search" aria-label="search">
