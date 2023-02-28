@@ -21,9 +21,10 @@
                 <p class="fw-bold text-dark" id="recenti">Annunci Recenti</p>
             </div>
               {{-- card component --}}
-              <x-card>
+             
+              <x-card :annunci="$announcements"/>
                 
-              </x-card>
+              
         </div>
     </div>
         
