@@ -15,7 +15,7 @@
             <div class="col-12 mx-auto">
                 <p class="h2 my-2 fw-bold text-center text-white d-flex justify-content-center mb-5 mt-5 pb-3 pt-3 border rounded border-warning border-opacity-50 bgh1">Annunci Recenti</p>
             </div>
-                @foreach ($announcements as $announcement)
+                @forelse ($announcements as $announcement)
                     <div class="col-lg-4 col-md-6 col-sm-10 my-4 d-flex justify-content-center">
                         <div class="card shadow" style="width: 18rem">
                             <img src="https://picsum.photos/200" alt="" class="card-img-top p-3 rounded">
@@ -29,7 +29,15 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                    @empty
+                    <div class="col-12">
+                        <div class="alert alert-warning py-3 shadow">
+                            <p class="lead">Non ci sono annunci per questa ricerca. prova a cambiare nome</p>
+
+                        </div>
+
+                    </div>
+                @endforelse
                 {{$announcements->links()}}
         </div>
     </div>

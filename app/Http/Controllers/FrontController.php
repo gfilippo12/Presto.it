@@ -18,4 +18,14 @@ class FrontController extends Controller
     {
         return view('categoryShow', compact('category'));
     }
+
+
+//* VEDERE  BECOME REVISOR  SU VIDEO 3 .... 20:35 REVISOR CONTROLLER (NEL VIDEO 10 LI METTE QUI DENTRO 4:15)!!
+
+ public function searchAnnouncements(Request $request)
+{
+    $announcement = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
+    return view('announcements.index', compact('announcements'));
+}
+
 }

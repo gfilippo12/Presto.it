@@ -67,6 +67,15 @@
                 </ul>
             </li>
             @endguest
+
+            <!- form search ->
+         
+            
+
+            <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
+                <input name="searched" class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
         </div>
 </nav>
