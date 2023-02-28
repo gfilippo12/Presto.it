@@ -65,8 +65,8 @@
             @endguest
 
             <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
-                <input name="searched" class="form-control me-2" type="search" placeholder="search" aria-label="search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="search">
+                <button class="btn btn-outline-warning" type="submit">Cerca</button>
             </form>
         </div>
         </div>
