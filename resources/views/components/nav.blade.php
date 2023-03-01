@@ -9,7 +9,7 @@
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">Annunci</a>
                 </li>
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Categorie
                     </a>
@@ -19,7 +19,7 @@
                             <li><hr class="dropdown-divider"></li>
                         @endforeach
                     </ul>
-                </li>
+                </li> --}}
             
             @guest
             <li class="nav-item">
@@ -64,10 +64,10 @@
             </li>
             @endguest
 
-            <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
+            {{-- <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
                 <input name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="search">
                 <button class="btn btn-outline-warning" type="submit">Cerca</button>
-            </form>
+            </form> --}}
         </div>
         </div>
 </nav>

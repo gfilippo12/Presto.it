@@ -10,19 +10,47 @@
                         <a href="{{route('announcements.index')}}" class=" heartbeat btn btn-lg btn-outline-warning text-white border border-light border-3" id="button2">Acquista!</a>
                     </div>
                 </div>
-            </div>
         </div>
-        
+    </div>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6">
-                <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
-                    <input name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="search">
-                    <button class="btn btn-outline-warning" type="submit">Cerca</button>
-                </form>
+            <div class="col-12 mx-auto">
+                <p class="fw-bold text-dark" id="recenti">Le Nostre Categorie</p>
             </div>
         </div>
     </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="container-fluid col-6" id="search1">
+                <div class="row">
+                    <div class="col-6">
+                        <form action="{{route('announcements.search')}}" method="GET" id="search2" class="d-flex">
+                            <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca in annunci..." aria-label="search">
+                            <button class="btn btn-light fw-bold d-flex align-items-center" type="submit">CERCA</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="categorie1" class="col-6">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CATEGORIE
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        @foreach ($categories as $category)
+                            <li><a class="dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{ $category->name }}</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        @endforeach
+                    </ul>
+                </li>
+            </div>
+        </div>
+
+    </div>
+        
 
     <div class="container-fluid">
         <div class="row">
