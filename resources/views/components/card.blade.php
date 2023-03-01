@@ -14,5 +14,5 @@
                 <p class="card-footer" id="text">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}</p>
             </div>
         </div>
-    </div>
+    </div>   
 @endforeach
