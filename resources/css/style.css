@@ -130,6 +130,19 @@ html{
     border-radius: 50px;
 }
 
+#box{
+    margin-top: 5px;
+    margin-right: 16px;
+    background: transparent linear-gradient(279deg, #FFC051 0%, #EC8B2A 100%) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    width: 260px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal 900 25px/30px Lato;
+}
+
 #categorie1{
     margin-top: 5px;
     border-radius: 15px;

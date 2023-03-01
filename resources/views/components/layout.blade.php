@@ -16,7 +16,6 @@
         
         @livewireScripts
 
-        <x-footer />
 
     </body>
 </html>

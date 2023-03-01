@@ -1,9 +1,10 @@
 <x-layout>
 
 <div class="container-fluid g-0" id="bgContainer-auth">
+    <x-nav></x-nav>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6 mx-auto bgh1 rounded opacity-75">
+            <div class="col-6 mx-auto border p-3 rounded">
                 <h1 class="text-dark">Registrati</h1>
                 <form action="/register" method="POST">
                     @csrf

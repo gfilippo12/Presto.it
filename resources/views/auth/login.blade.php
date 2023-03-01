@@ -2,7 +2,7 @@
 
 <div class="container-fluid g-0">
     <x-nav></x-nav>
-    <div class="container d-flex justify-content-between">
+    <div class="container justify-content-center">
         <div class="row">
             <div class="col-6 mx-auto border p-3 rounded">
                 <h1 class="text-dark">Accedi</h1>
