@@ -50,25 +50,23 @@
         </div>
     </div>
 
-    <div class="container mt-3 fw-bold d-flex justify-content-center">
+    <div class="container mt-3 fw-bold">
         <div class="row">
             <div class="col-3 d-flex flex-column text-white" id="box">
                 <h3 class="fw-bold">TECNOLOGIA</h3>
-                <a href="" class="btn btn-outline-light">Annunci in "Tecnologia"</a>
+                <a href="/categoria/3" class="btn btn-outline-light">Annunci in "Tecnologia"</a>
             </div>
             <div class="col-3 d-flex flex-column text-white" id="box">
                 <h3 class="fw-bold">MOTORI</h3>
-                <a href="" class="btn btn-outline-light">Annunci in "Motori"</a>
+                <a href="/categoria/1" class="btn btn-outline-light">Annunci in "Motori"</a>
             </div>
             <div class="col-3 d-flex flex-column text-white" id="box">
                 <h3 class="fw-bold">INFORMATICA</h3>
-                <a href="" class="btn btn-outline-light">Annunci in "Informatica"</a>
+                <a href="/categoria/2" class="btn btn-outline-light">Annunci in "Informatica"</a>
             </div>
             <div class="col-3 d-flex flex-column text-white" id="box">
-                <div>
                     <h3 class="fw-bold">LIBRI</h3>
-                </div>
-                <a href="/categoria/4" class="btn btn-outline-light">Annunci in "Libri"</a>
+                <a href="/categoria/4" class="btn btn-outline-light">Annunci in "Libri</a>
             </div>
         </div>
     </div>
