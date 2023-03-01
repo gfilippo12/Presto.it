@@ -1,10 +1,10 @@
 <x-layout>
 
-<div class="container-fluid g-0" id="bgContainer-auth">
+<div class="container-fluid g-0" id="registerbackground">
     <x-nav></x-nav>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6 mx-auto border p-3 rounded">
+            <div class="col-6 mx-auto border p-3 rounded" id="registerform">
                 <h1 class="text-dark">Registrati</h1>
                 <form action="/register" method="POST">
                     @csrf
@@ -38,7 +38,10 @@
                             @enderror
                         </div>
                         <div>
-                            <button class="btn btn-warning">Registrati</button>
+                            <button class="btn btn-warning fw-bold">Registrati</button>
+                            <div class="d-flex fs-6 gap-2 mt-3">
+                                <span>Sei già registrato?</span><a class="fw-bold text-decoration-none text-warning" href="/login">Accedi</a>
+                            </div>
                         </div>
                     </div>
                 </form>

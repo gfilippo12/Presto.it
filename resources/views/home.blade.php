@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <div class="container mt-3 fw-bold">
+    <div class="container mt-3 fw-bold d-flex justify-content-center">
         <div class="row">
             <div class="col-3 d-flex flex-column text-white" id="box">
                 <h3 class="fw-bold">TECNOLOGIA</h3>
@@ -68,7 +68,7 @@
                 <div>
                     <h3 class="fw-bold">LIBRI</h3>
                 </div>
-                <a href="{{ route('categoryShow', compact('category')) }}" class="btn btn-outline-light">Annunci in {{ $category->name }}</a>
+                <a href="/categoria/4" class="btn btn-outline-light">Annunci in "Libri"</a>
             </div>
         </div>
     </div>

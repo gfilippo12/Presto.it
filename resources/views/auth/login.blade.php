@@ -1,10 +1,10 @@
 <x-layout>
 
-<div class="container-fluid g-0">
+<div class="container-fluid g-0" id="loginbackground">
     <x-nav></x-nav>
-    <div class="container justify-content-center">
+    <div class="container justify-content-center" >
         <div class="row">
-            <div class="col-6 mx-auto border p-3 rounded">
+            <div class="col-6 mx-auto border p-3 rounded" id="loginform">
                 <h1 class="text-dark">Accedi</h1>
                 <form action="/login" method="POST">
                     @csrf
@@ -24,7 +24,10 @@
                             @enderror
                         </div>
                         <div>
-                            <button class="btn btn-warning">Accedi</button>
+                            <button class="btn btn-warning fw-bold ">Accedi</button>
+                            <div class="d-flex fs-6 gap-2 mt-3">
+                                <span>Prima volta su Presto?</span><a class="fw-bold text-decoration-none text-warning" href="/register">Registrati</a>
+                            </div>
                         </div>
                     </div>
                 </form>
