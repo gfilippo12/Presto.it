@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 
-*{
-cursor: pointer;}
-
-
 /* Logo */
 #logo {
     font-family: 'Bebas Neue';
@@ -16,8 +12,8 @@ cursor: pointer;}
 
 /* Bg for H1 */
 .bgh1 {
-    background: linear-gradient(177deg, #EC8B2A 0%, #FFC051 100%);
-    
+    background: rgb(236,139,42);
+    background: linear-gradient(140deg, rgba(236,139,42,1) 50%, rgba(255,192,81,1) 100%);
 } 
 
 /* Annunci Recenti */
