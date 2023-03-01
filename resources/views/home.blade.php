@@ -14,6 +14,15 @@
             </div>
         </div>
         
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
+                    <input name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="search">
+                    <button class="btn btn-outline-warning" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid">
