@@ -1,17 +1,16 @@
 <x-layout>
     {{-- Navbar --}}
     <x-nav></x-nav>
-    <div class="container-fluid p-5 bgh1 shadow mb-4 g-0">
-        <div class="row">
-            <div class="col-12 text-dark p-5">
-                <h1 class="display-2">
-                    {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'non ci sono annunci da revisionare'}}
-                    </h1>
-            </div>    
-        </div> 
-    </div>
-    
+
     <h2>Annunci da revisionare</h2>
+    
+            <div class="col-12 text-dark p-5">
+                <h3>
+                    {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'non ci sono annunci da revisionare'}}
+                    </h3>
+            </div>
+    
+    
 
     @if($announcement_to_check)
     <div class="container">
