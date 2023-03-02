@@ -84,7 +84,8 @@
     <thead>
         <tr>
             <td>Titolo</td>
-            <td>Descrizione</td>
+            <td>Categoria</td>
+            <td>Data</td>
             <td>Stato</td>
         </tr>
     </thead>
@@ -93,7 +94,8 @@
         @foreach ($announcements as $announcement)
             <tr>
                 <td>{{ $announcement->title }}</td>
-                <td>{{ $announcement->body }}</td>
+                <td>{{ $announcement->category->name }}</td>
+                <td>{{$announcement->created_at->format('d/m/Y')}}</td>
                 <td>
                     @if($announcement->is_accepted)
                         <p class="text-success">ACCETTATO</p> 
