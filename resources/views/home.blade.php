@@ -2,6 +2,8 @@
 
     <div class="container-fluid g-0" id="bgContainer">
         <x-nav></x-nav>
+
+
         <div class="row">
                 <div class="col-12 mx-auto ">
                     <h1 class="first-text"><span class="tracking-in-contract-bck ">PRESTO.IT</span><br> CONSEGNE IN <br>TUTTA ITALIA</h1>
@@ -16,7 +18,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 mx-auto">
-                <p class="fw-bold text-dark" id="recenti">Le Nostre Categorie</p>
+                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Le Nostre Categorie</h2>
             </div>
         </div>
     </div>
@@ -75,13 +77,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 mx-auto">
-                <p class="fw-bold text-dark" id="recenti">Annunci Recenti</p>
+                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Annunci Recenti</h2>
             </div>
               {{-- card component --}}
-             
+
               <x-card :annunci="$announcements"/>
                 
-              
+
         </div>
     </div>
         
@@ -94,5 +96,7 @@
             id="btn-back-to-top">
             <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
+
+
 
 </x-layout>

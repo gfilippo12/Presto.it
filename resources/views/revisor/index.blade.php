@@ -1,45 +1,64 @@
 <x-layout>
+
+    <div class="container-fluid g-0" id="bg-revisor">
+
     {{-- Navbar --}}
     <x-nav></x-nav>
 
-    <h2>Annunci da revisionare</h2>
-    
-            <div class="col-12 text-dark p-5">
-                <h3>
+    <div class="container mt-4">
+        <div class="row">
+            <h1 class="d-flex justify-content-center text-white display-2">Annunci da revisionare</h1>
+            <div class="col-12 text-white">
+                <h5 class="fw-bold" id="text-revisor">
                     {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'non ci sono annunci da revisionare'}}
-                    </h3>
+                </h5>
             </div>
+        </div>
+    </div>
     
-    
-
     @if($announcement_to_check)
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <div>
+                    <table class="table  table-bordered bg-light">
+                        <thead>
+                            <td>Titolo</td>
+                            <td>Descrizione</td>
+                            <td>Pubblicato</td>
+                        </thead>
+
+                        <tbody>
+                            <td>{{$announcement_to_check->title}}</td>
+                            <td>{{$announcement_to_check->body}}</td>
+                            <td>{{$announcement_to_check->created_at->format('d/m/Y')}}</td>
+                        </tbody>
+                 </div>
+                </table>
                 <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
+                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
                          </div>
 
                          <div class="carousel-item">
-                            <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
+                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
                          </div>
 
                          <div class="carousel-item">
-                            <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
+                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
 
                          </div>
                          <div class="carousel-item">
-                            <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
+                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
 
                          </div>
                          <div class="carousel-item">
-                            <img src="http://picsum.photo/id/27/1200/400" class="img-fluid p-3 rounded" 
+                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
                          </div>
                          <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel" data-bs-slide="prev">
@@ -47,39 +66,37 @@
                             <span class="visually-hidden">Previous</span>
                          </button>
                          <button class="carousel-control-next" type="button" data-bs-target="#showCarousel" data-bs-slide="next">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                          </button>
-                         <div>
-                            <h5 class="card-title">Titilo: {{$announcement_to_check->title}}</h5>
-                            <p class="card-text">Descrizione: {{$announcement_to_check->body}}</p>
-                            <p class="card-footer">Publicato il: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
-                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
-                                @csrf
-                                @method('PATCH')
-                                <button type="submit" class="btn btn-success shadow">Accetta</button>
-                            </form>
-                        </div>
-
+                    <div class="container d-flex mb-5 justify-content-center">
                         <div class="row">
-                            <div class="col-12 col-md-6">
-                                <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
+                            <div class="col-6">
+                                <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
                                     @csrf
                                     @method('PATCH')
-                                    <button type="submit" class="btn btn-success shadow">Rifiuta</button>
+                                    <button type="submit" class="btn btn-success">Accetta</button>
                                 </form>
                             </div>
+    
+                            
+                                <div class="col-6">
+                                    <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
+                                        @csrf
+                                        @method('PATCH')
+                                        <button type="submit" class="btn btn-danger">Rifiuta</button>
+                                    </form>
+                                </div>
+                        </div>
                     </div>
-                </div>
+                    
                 @endif
 
-<h2>Tutti gli annunci</h2>
 
-<table class="table table-bordered">
+<h2 class="d-flex justify-content-center text-white">Tutti gli annunci</h2>
+
+<table class="table table-bordered bg-light">
     <thead>
         <tr>
             <td>Titolo</td>
@@ -99,7 +116,7 @@
                     @if($announcement->is_accepted)
                         <p class="text-success">ACCETTATO</p> 
                     @else
-                        <p class="text-danger">IN ELABORAZIONE</p> 
+                        <p class="text-danger">RIFIUTATO</p> 
                     @endif
                 </td>
                 <td>
@@ -136,7 +153,7 @@
             <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
 
-
+        </div>
             
             
 </x-layout>
