@@ -2,19 +2,22 @@
 
     <div class="container-fluid g-0" id="bg-revisor">
 
-    {{-- Navbar --}}
-    <x-nav></x-nav>
+        {{-- Navbar --}}
+        <x-nav></x-nav>
 
-    <div class="container mt-4">
-        <div class="row">
-            <h1 class="d-flex justify-content-center text-white display-2">Annunci da revisionare</h1>
-            <div class="col-12 text-white">
-                <h5 class="fw-bold" id="text-revisor">
-                    {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'non ci sono annunci da revisionare'}}
-                </h5>
+        <div class="container mt-4">
+            <div class="row">
+                <h1 class="d-flex justify-content-center text-white display-2 tracking-in-contract-bck">Zona Revisor</h1>
+                
             </div>
         </div>
     </div>
+        <div class="col-12 text-dark ">
+                <h5 class="fw-bold d-flex justify-content-center mt-3" id="text-revisor">
+                        {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'Non ci sono annunci da revisionare'}}
+                </h5>
+        </div>
+        
     
     @if($announcement_to_check)
     <div class="container">
@@ -153,7 +156,7 @@
             <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
 
-        </div>
+        
             
             
 </x-layout>

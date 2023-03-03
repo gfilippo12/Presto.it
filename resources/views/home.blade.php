@@ -1,9 +1,10 @@
 <x-layout>
 
     <div class="container-fluid g-0" id="bgContainer">
+        {{-- Navbar --}}
         <x-nav></x-nav>
 
-
+        {{-- Header --}}
         <div class="row">
                 <div class="col-12 mx-auto ">
                     <h1 class="first-text"><span class="tracking-in-contract-bck ">PRESTO.IT</span><br> CONSEGNE IN <br>TUTTA ITALIA</h1>
@@ -15,7 +16,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid"  data-aos="zoom-in" data-aos-duration="1200" >
         <div class="row">
             <div class="col-12 mx-auto">
                 <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Le Nostre Categorie</h2>
@@ -23,7 +24,8 @@
         </div>
     </div>
 
-    <div class="container d-flex justify-content-center">
+    {{-- Category Search --}}
+    <div class="container d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row">
             <div class="container-fluid col-6" id="search1">
                 <div class="row">
@@ -36,9 +38,10 @@
                 </div>
             </div>
 
-            <div id="categorie1" class="col-6">
+            {{-- Category Select --}}
+            <div id="categorie1" class="col-6" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="250">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle " href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     CATEGORIE
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -52,36 +55,33 @@
         </div>
     </div>
 
-    <div class="container mt-3 fw-bold">
+    {{-- Categories --}}
+    <div class="container mt-3"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row">
             <div class="col-3 d-flex flex-column text-white" id="box">
-                <h3 class="fw-bold">TECNOLOGIA</h3>
-                <a href="/categoria/3" class="btn btn-outline-light">Annunci in "Tecnologia"</a>
+                <a href="/categoria/3" class="btn btn-outline-light fw-bold fs-4">TECNOLOGIA</a>
             </div>
             <div class="col-3 d-flex flex-column text-white" id="box">
-                <h3 class="fw-bold">MOTORI</h3>
-                <a href="/categoria/1" class="btn btn-outline-light">Annunci in "Motori"</a>
+                <a href="/categoria/1" class="btn btn-outline-light fw-bold fs-4">MOTORI</a>
             </div>
             <div class="col-3 d-flex flex-column text-white" id="box">
-                <h3 class="fw-bold">INFORMATICA</h3>
-                <a href="/categoria/2" class="btn btn-outline-light">Annunci in "Informatica"</a>
+                <a href="/categoria/2" class="btn btn-outline-light fw-bold fs-4">INFORMATICA</a>
             </div>
             <div class="col-3 d-flex flex-column text-white" id="box">
-                    <h3 class="fw-bold">LIBRI</h3>
-                <a href="/categoria/4" class="btn btn-outline-light">Annunci in "Libri</a>
+                <a href="/categoria/4" class="btn btn-outline-light fw-bold fs-4">LIBRI</a>
             </div>
         </div>
     </div>
         
-
-    <div class="container-fluid">
+    {{-- Latest Announcements --}}
+    <div class="container-fluid" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row">
             <div class="col-12 mx-auto">
                 <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Annunci Recenti</h2>
             </div>
-              {{-- card component --}}
+            {{-- card component --}}
 
-              <x-card :annunci="$announcements"/>
+            <x-card :annunci="$announcements"/>
                 
 
         </div>
