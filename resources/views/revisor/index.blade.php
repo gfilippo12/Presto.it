@@ -12,11 +12,12 @@
             </div>
         </div>
     </div>
-        <div class="col-12 text-dark ">
-                <h5 class="fw-bold d-flex justify-content-center mt-3" id="text-revisor">
-                        {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'Non ci sono annunci da revisionare'}}
-                </h5>
-        </div>
+
+    <div class="col-12 text-dark ">
+            <h5 class="fw-bold d-flex justify-content-center mt-3" id="text-revisor">
+                    {{$announcement_to_check ? 'Ecco l\'annuncio da revisionare': 'Non ci sono annunci da revisionare'}}
+            </h5>
+    </div>
         
     
     @if($announcement_to_check)
@@ -97,64 +98,64 @@
                 @endif
 
 
-<h2 class="d-flex justify-content-center text-white">Tutti gli annunci</h2>
+    <h2 class="d-flex justify-content-center text-white">Tutti gli annunci</h2>
 
-<table class="table table-bordered bg-light">
-    <thead>
-        <tr>
-            <td>Titolo</td>
-            <td>Categoria</td>
-            <td>Data</td>
-            <td>Stato</td>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach ($announcements as $announcement)
+    <table class="table table-bordered bg-light">
+        <thead>
             <tr>
-                <td>{{ $announcement->title }}</td>
-                <td>{{ $announcement->category->name }}</td>
-                <td>{{$announcement->created_at->format('d/m/Y')}}</td>
-                <td>
-                    @if($announcement->is_accepted)
-                        <p class="text-success">ACCETTATO</p> 
-                    @else
-                        <p class="text-danger">RIFIUTATO</p> 
-                    @endif
-                </td>
-                <td>
-                    <div class="container d-flex">
-                        <div class="row">
-                            <div class="col-6">
-                                <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement])}}" method="POST">
-                                    @csrf
-                                    @method('PATCH')
-                                    <button type="submit" class="btn btn-success">Accetta</button>
-                                </form>
-                            </div>
-                            <div class="col-6">
-                                <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement])}}" method="POST">
-                                    @csrf
-                                    @method('PATCH')
-                                    <button type="submit" class="btn btn-danger">Rifiuta</button>
-                                </form>
+                <td>Titolo</td>
+                <td>Categoria</td>
+                <td>Data</td>
+                <td>Stato</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach ($announcements as $announcement)
+                <tr>
+                    <td>{{ $announcement->title }}</td>
+                    <td>{{ $announcement->category->name }}</td>
+                    <td>{{$announcement->created_at->format('d/m/Y')}}</td>
+                    <td>
+                        @if($announcement->is_accepted)
+                            <p class="text-success">ACCETTATO</p> 
+                        @else
+                            <p class="text-danger">RIFIUTATO</p> 
+                        @endif
+                    </td>
+                    <td>
+                        <div class="container d-flex">
+                            <div class="row">
+                                <div class="col-6">
+                                    <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement])}}" method="POST">
+                                        @csrf
+                                        @method('PATCH')
+                                        <button type="submit" class="btn btn-success">Accetta</button>
+                                    </form>
+                                </div>
+                                <div class="col-6">
+                                    <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement])}}" method="POST">
+                                        @csrf
+                                        @method('PATCH')
+                                        <button type="submit" class="btn btn-danger">Rifiuta</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-        @endforeach
-    </tbody>
-</table>
-                
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+                    
     
-            {{-- Btn for Scroll Up --}}
-            <button
-            type="button"
-            class="btn btn-floating btn-lg"
-            id="btn-back-to-top">
-            <i class="bi bi-arrow-up-circle-fill"></i>
-            </button>
+    {{-- Btn for Scroll Up --}}
+    <button
+    type="button"
+    class="btn btn-floating btn-lg"
+    id="btn-back-to-top">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
 
         
             
