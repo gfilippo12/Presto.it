@@ -57,7 +57,7 @@
 
     {{-- Categories --}}
     <div class="container mt-3"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-3 d-flex flex-column text-white" id="box">
                 <a href="/categoria/3" class="btn btn-outline-light fw-bold fs-4">TECNOLOGIA</a>
             </div>
