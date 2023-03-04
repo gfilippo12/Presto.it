@@ -1,7 +1,7 @@
 
 
     @foreach ($annunci as $announcement)
-    <div class="col-lg-4 col-md-6 col-sm-10 my-4 d-flex justify-content-center" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="200">
+    <div class="col-lg-4 col-md-6 col-sm-10 my-4 d-flex justify-content-center">
         <div class="card bgh1 shadow-lg text-white fs-4" style="width: 18rem">
             <img src="https://picsum.photos/200" alt="" class="card-img-top p-3 rounded">
             <div class="card-body">

@@ -36,14 +36,14 @@
                             <td>{{$announcement_to_check->body}}</td>
                             <td>{{$announcement_to_check->created_at->format('d/m/Y')}}</td>
                         </tbody>
-                 </div>
-                </table>
+                    </table>
+                </div>
                 <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
                             alt="...">
-                         </div>
+                        </div>
 
                          <div class="carousel-item">
                             <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
