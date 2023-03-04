@@ -11,8 +11,8 @@
         </div>
         <div class=" col-6 text-white  ">
             
-            <h1 class="text-white">Vuoi lavorare con noi?</h1>
-            <h3 class="text-white">Entra a far parte del Team Presto.it con due semplici click </h3>
+            <p class="text-white">Vuoi lavorare con noi?</p>
+            <p class="text-white">Entra a far parte del Team Presto.it con due semplici click </p>
             <a href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Diventa Revisor</a>
             
           </div>
