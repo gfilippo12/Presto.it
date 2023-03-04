@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
-
+use App\Models\Image;
 class Announcement extends Model
 {
     use HasFactory, Searchable;
@@ -49,6 +49,11 @@ class Announcement extends Model
     public static function toBeRevisionedCount()
     {
         return Announcement::where('is_accepted', null)->count(); //* 17.35
+    }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
     
 }
