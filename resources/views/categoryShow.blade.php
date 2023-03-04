@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="d-flex justify-content-center display-2 mt-4">Esplora la categoria {{ $category->name }}</h1> 
+            <h1 class="d-flex justify-content-center display-2 mt-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">Esplora la categoria {{ $category->name }}</h1> 
 
     <div class="container">
         <div class="row">

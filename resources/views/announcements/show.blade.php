@@ -1,7 +1,7 @@
 <x-layout>
     {{-- Navbar --}}
     <x-nav></x-nav>
-    <h1 class="display-2 d-flex justify-content-center">Dettagli Annuncio</h1>
+    <h1 class="display-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">Dettagli Annuncio</h1>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-4 my-4">
