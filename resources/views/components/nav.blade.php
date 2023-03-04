@@ -9,17 +9,6 @@
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">Annunci</a>
                 </li>
-                {{-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorie
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        @foreach ($categories as $category)
-                            <li><a class="dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{ $category->name }}</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                        @endforeach
-                    </ul>
-                </li> --}}
             
             @guest
             <li class="nav-item">
@@ -38,23 +27,32 @@
             
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ Auth::user()->name }}
+                @if (Auth::user()->is_revisor)
+                    <span class="position-absolute top-0 start-100 translate-middle badge border border-danger rounded-circle bg-danger">
+                        {{App\Models\Announcement::toBeRevisionedCount()}}
+                        <span class="visually-hidden">
+                        </span>
+                    </span>
+                @endif
+                
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li>
                         @if (Auth::user()->is_revisor)
-                        <li class="nav-item"> 
-                            <a class="nav-link btn-outline btn btn-warning shadow mb-2"
-                            aria-current="page"  href="{{route('revisor.index')}}">
-                            Zona Revisor
-                            <span class="position-absolute top-0 start-100 translate-middle rounded-5 bg-warning">
-                                {{App\Models\Announcement::toBeRevisionedCount()}}
-                                <span class="visually-hidden">unread message </span>
-                            </span>
-                            </a>
-                        </li>
+                            <li class="nav-item">
+                                <a href="{{route('revisor.index')}}" class="nav-link btn-outline btn btn-warning shadow mb-2 position-relative" aria-current="page">
+                                    Zona Revisor
+                                    <span class="position-absolute top-0 start-100 translate-middle badge border border-danger rounded-circle bg-danger">
+                                        {{App\Models\Announcement::toBeRevisionedCount()}}
+                                        <span class="visually-hidden">
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
                         @endif
+
                         <form action="/logout" method="POST">
                         @csrf
                             <button type="submit" class="nav-link btn btn-warning shadow">Esci</button>
@@ -64,10 +62,6 @@
             </li>
             @endguest
 
-            {{-- <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
-                <input name="searched" class="form-control me-2" type="search" placeholder="Cerca" aria-label="search">
-                <button class="btn btn-outline-warning" type="submit">Cerca</button>
-            </form> --}}
         </div>
         </div>
 </nav>
