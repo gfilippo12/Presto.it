@@ -16,7 +16,7 @@ return new class extends Migration
             
             //* FK Announcement
             $table->unsignedBigInteger('announcement_id')->nullable();
-            $table->foreign('announcement_id')->references('id')->on('announcement')->onDelete('cascade');
+            $table->foreign('announcement_id')->references('id')->on('announcements')->onDelete('cascade');
             $table->string('path')->nullable();
             //* Fine FK
 
