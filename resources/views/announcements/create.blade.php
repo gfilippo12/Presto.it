@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-base>
     
     <div class="container-fluid g-0" id="announcementbackground">
         <x-nav></x-nav>
@@ -9,4 +9,4 @@
         </div>
     </div>
 
-</x-layout>
+</x-layout-base>
