@@ -77,7 +77,7 @@
     <div class="container-fluid" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row">
             <div class="col-12 mx-auto">
-                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Annunci Recenti</h2>
+                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">{{__('ui.allAnnouncements')}}</h2>
             </div>
             {{-- card component --}}
 
