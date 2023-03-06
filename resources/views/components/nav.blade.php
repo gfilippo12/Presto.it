@@ -9,6 +9,16 @@
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">Annunci</a>
                 </li>
+                {{-- Languages --}}
+            <li class="nav-item">
+                <x-_locale lang="en" nation='gb'/>  
+            </li>
+            <li class="nav-item">
+                <x-_locale lang="es" nation='es'/>  
+            </li>
+            <li class="nav-item">
+                <x-_locale lang="it" nation='it'/>  
+            </li>
             
             @guest
             <li class="nav-item">
@@ -24,16 +34,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('announcements.create')}}">Crea Annuncio</a>
             </li>
-            {{-- Languages --}}
-            <li class="nav-item">
-                <x-_locale lang="en" nation='gb'/>  
-            </li>
-            <li class="nav-item">
-                <x-_locale lang="es" nation='es'/>  
-            </li>
-            <li class="nav-item">
-                <x-_locale lang="it" nation='it'/>  
-            </li>
+            
     
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
