@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="container-fluid"  data-aos="zoom-in" data-aos-duration="1200" >
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 mx-auto">
                 <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Le Nostre Categorie</h2>
@@ -25,7 +25,7 @@
     </div>
 
     {{-- Category Search --}}
-    <div class="container d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+    <div class="container d-flex justify-content-center">
         <div class="row">
             <div class="container-fluid col-6" id="search1">
                 <div class="row">
@@ -39,7 +39,7 @@
             </div>
 
             {{-- Category Select --}}
-            <div id="categorie1" class="col-6" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="250">
+            <div id="categorie1" class="col-6">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     CATEGORIE

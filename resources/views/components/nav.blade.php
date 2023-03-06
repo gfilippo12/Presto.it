@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light fadeInDown" id="nav">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold" id="logo" href='{{route('home')}}'>Presto.it</a>
+        <a class="navbar-brand fw-bold big" id="logo" href='{{route('home')}}'>Presto.it</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -9,6 +9,16 @@
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">Annunci</a>
                 </li>
+                {{-- Languages --}}
+            <li class="nav-item">
+                <x-_locale lang="en" nation='gb'/>  
+            </li>
+            <li class="nav-item">
+                <x-_locale lang="es" nation='es'/>  
+            </li>
+            <li class="nav-item">
+                <x-_locale lang="it" nation='it'/>  
+            </li>
             
             @guest
             <li class="nav-item">
@@ -24,16 +34,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('announcements.create')}}">Crea Annuncio</a>
             </li>
-            {{-- Languages --}}
-            <li class="nav-item">
-                <x-_locale lang="en" nation='gb'/>  
-            </li>
-            <li class="nav-item">
-                <x-_locale lang="es" nation='es'/>  
-            </li>
-            <li class="nav-item">
-                <x-_locale lang="it" nation='it'/>  
-            </li>
+            
     
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

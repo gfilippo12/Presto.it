@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12 col-md-4 my-4">
                 <div class="card shadow-lg bgh1 fs-4 text-white" style="width: 18rem">
-                    <img src="https://picsum.photos/200" alt="" class="card-img-top p-3 rounded">
+                    <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}" alt="" class="card-img-top p-3 rounded big">
                     <div class="card-body">
                         <h5 class="card-title text-dark fs-2">{{ $announcement->title }}</h5>
                         <p class="card-text">{{ $announcement->body }}</p>

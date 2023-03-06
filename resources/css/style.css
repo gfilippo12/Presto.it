@@ -3,6 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 
+
+/* Class For Transform */
+.big{
+    transition: 0.7s;
+}
+
+
+.big:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+
+
+
 /* Logo */
 #logo {
     font-family: 'Bebas Neue';

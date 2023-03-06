@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-base>
 
 <div class="container-fluid g-0" id="loginbackground">
     <x-nav></x-nav>
@@ -36,4 +36,4 @@
     </div>
 </div>
 
-</x-layout>
+</x-layout-base>
