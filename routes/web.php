@@ -4,6 +4,7 @@ use App\Http\Controllers\FrontController;
 use App\Http\Controllers\RevisorController;
 use Illuminate\Routing\Controllers\Middleware;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,6 @@ Route::get('/ricerca/annuncio',[FrontController::class, 'searchAnnouncements'])-
 Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'] )->name('set_language_local');
 
 //*Rotta per contattare il Venditore
-Route::get('/contatta/venditore', [UserController::class,'contact'])->middleware('auth')->name('contact');
+Route::get('/contatta/venditore/{announcement}', [UserController::class,'contact'])->middleware('auth')->name('contact');
 
 

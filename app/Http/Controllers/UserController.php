@@ -90,8 +90,8 @@ class UserController extends Controller
 
         return redirect()->route('management.index')->with(['success' => 'Annuncio cancellato con successo']);
     }
-    public function contact() {
-        Mail::to('admin@presto.it')->send( new ContactSeller(Auth::user()));
+    public function contact(Announcement $announcement) {
+        Mail::to($announcement->user->email)->send( new ContactSeller(Auth::user()));
         return redirect()->back()->with('message', 'La tua email è stata inviata con successo al venditore!');
 
     }
