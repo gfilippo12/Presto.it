@@ -2,7 +2,7 @@
 return [
     // entrata
     'entryTitle' => 'PRESTO.IT',
-    'entryTitle2' => 'DELIVERIES ',
+    'entryTitle2' => 'DELIVERIES',
     'entryTitle3' => 'THROUGHOUT ITALY',
     'sellBtn' => 'Sell!',
     'buyBtn' => 'Buy!',
