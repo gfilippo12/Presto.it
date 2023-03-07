@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Models\Announcement;
+use Illuminate\Support\Facades\Storage;
 
 class Image extends Model
 {
