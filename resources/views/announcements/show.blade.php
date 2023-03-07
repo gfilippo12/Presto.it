@@ -6,11 +6,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class="col-6">
                 <div class="col-6">
                     <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}" alt="" class="card-img-top p-3 rounded big img-fluid">
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card shadow-lg fs-4  bgh1">
                         <div class="card-body">
                             <h5 class="card-title text-dark fs-2">{{ $announcement->title }}</h5>
@@ -22,7 +22,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-6">
+                
+            </div>
+        </div> 
     </div>
     
 </x-layout>
