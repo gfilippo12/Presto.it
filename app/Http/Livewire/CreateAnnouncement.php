@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Livewire;
+
+use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
@@ -77,8 +79,14 @@ class CreateAnnouncement extends Component
         $this->announcement = Category::find($this->category)->announcements()->create($this->validate());
         if(count($this->images)){
             foreach ($this->images as $image){
-                $this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
+                //$this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
+                $newFileName = "announcements/{$this->announcement->id}";
+                $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
+
+                dispatch(new ResizeImage($newImage->path , 400 , 300));
             }
+
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
         session()->flash('message','Articolo inserito con successo, sarà publicato dopo la revisione');
