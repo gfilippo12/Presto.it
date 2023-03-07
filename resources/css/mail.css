@@ -1,0 +1,11 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue';
+    background: rgb(236,139,42);
+    background: linear-gradient(140deg, rgba(236,139,42,1) 50%, rgba(255,192,81,1) 100%);
+}
+
+
+

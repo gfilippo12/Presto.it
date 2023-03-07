@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">Annunci</a>
+                    <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">{{__('ui.announcementsLink')}}</a>
                 </li>
                 {{-- Languages --}}
             <li class="nav-item">
@@ -22,17 +22,17 @@
             
             @guest
             <li class="nav-item">
-                <a class="nav-link fw-bold " href="/login">Accedi</a>
+                <a class="nav-link fw-bold " href="/login">{{__('ui.login')}}</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="/register">Registrati</a>
+                <a class="nav-link " href="/register">{{__('ui.register')}}</a>
             </li>
             
             @else
             
             
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('announcements.create')}}">Crea Annuncio</a>
+                <a class="nav-link" href="{{ route('announcements.create')}}">{{__('ui.announcementCreate')}}</a>
             </li>
             
     
@@ -53,7 +53,7 @@
                         @if (Auth::user()->is_revisor)
                             <li class="nav-item">
                                 <a href="{{route('revisor.index')}}" class="nav-link btn-outline btn btn-warning shadow mb-2 position-relative" aria-current="page">
-                                    Zona Revisor
+                                    {{__('ui.revisorLink')}}
                                     <span class="position-absolute top-0 start-100 translate-middle badge border border-danger rounded-circle bg-danger">
                                         {{App\Models\Announcement::toBeRevisionedCount()}}
                                         <span class="visually-hidden">
@@ -65,7 +65,7 @@
 
                         <form action="/logout" method="POST">
                         @csrf
-                            <button type="submit" class="nav-link btn btn-warning shadow">Esci</button>
+                            <button type="submit" class="nav-link btn btn-warning shadow">{{__('ui.backBtn')}}</button>
                         </form>
                     </li>
                 </ul>

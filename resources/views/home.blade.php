@@ -10,8 +10,8 @@
                     <h1 class="first-text"><span class="tracking-in-contract-bck ">{{__('ui.entryTitle')}} <br> {{__('ui.entryTitle2')}} <br>{{__('ui.entryTitle3')}}</h1>
                     
                     <div class="d-grid gap-2 d-md-block ">
-                        <a href="{{ route('announcements.create')}}" class="heartbeat  btn btn-lg btn-outline-warning text-white border border-light border-3" id="button1">Vendi!</a>
-                        <a href="{{route('announcements.index')}}" class=" heartbeat btn btn-lg btn-outline-warning text-white border border-light border-3" id="button2">Acquista!</a>
+                        <a href="{{ route('announcements.create')}}" class="heartbeat  btn btn-lg btn-outline-warning text-white border border-light border-3" id="button1">{{__('ui.sellBtn')}}</a>
+                        <a href="{{route('announcements.index')}}" class=" heartbeat btn btn-lg btn-outline-warning text-white border border-light border-3" id="button2">{{__('ui.buyBtn')}}</a>
                     </div>
                 </div>
         </div>
@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 mx-auto">
-                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">Le Nostre Categorie</h2>
+                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">{{__('ui.categoryTitle')}}</h2>
             </div>
         </div>
     </div>
@@ -32,8 +32,8 @@
                 <div class="row">
                     <div class="col-6">
                         <form action="{{route('announcements.search')}}" method="GET" id="search2" class="d-flex">
-                            <input  name="searched" class="form-control me-2" type="search" placeholder="Cerca in annunci..." aria-label="search">
-                            <button class="btn btn-light fw-bold d-flex align-items-center" type="submit">CERCA</button>
+                            <input  name="searched" class="form-control me-2" type="search" placeholder="{{__('ui.searchbar')}}" aria-label="search">
+                            <button class="btn btn-light fw-bold d-flex align-items-center" type="submit">{{__('ui.searchBtn')}}</button>
                         </form>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
             <div id="categorie1" class="col-6">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " href="#" id="categoriesDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    CATEGORIE
+                        {{__('ui.categoryDropdown')}}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         @foreach ($categories as $category)
@@ -60,16 +60,16 @@
     <div class="container mt-3"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row justify-content-center">
             <div class="col-3 d-flex flex-column text-white  big" id="box">
-                <a href="/categoria/3" class="btn btn-outline-light fw-bold fs-4">TECNOLOGIA</a>
+                <a href="/categoria/3" class="btn btn-outline-light fw-bold fs-4">{{__('ui.tecnologia')}}</a>
             </div>
             <div class="col-3 d-flex flex-column text-white big" id="box">
-                <a href="/categoria/1" class="btn btn-outline-light fw-bold fs-4">MOTORI</a>
+                <a href="/categoria/1" class="btn btn-outline-light fw-bold fs-4">{{__('ui.motori')}}</a>
             </div>
             <div class="col-3 d-flex flex-column text-white big" id="box">
-                <a href="/categoria/2" class="btn btn-outline-light fw-bold fs-4">INFORMATICA</a>
+                <a href="/categoria/2" class="btn btn-outline-light fw-bold fs-4">{{__('ui.informatica')}}</a>
             </div>
             <div class="col-3 d-flex flex-column text-white big" id="box">
-                <a href="/categoria/4" class="btn btn-outline-light fw-bold fs-4">LIBRI</a>
+                <a href="/categoria/4" class="btn btn-outline-light fw-bold fs-4">{{__('ui.libri')}}</a>
             </div>
         </div>
     </div>
