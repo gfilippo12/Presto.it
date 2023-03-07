@@ -58,16 +58,16 @@
     {{-- Categories --}}
     <div class="container mt-3"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row justify-content-center">
-            <div class="col-3 d-flex flex-column text-white" id="box">
+            <div class="col-3 d-flex flex-column text-white  big" id="box">
                 <a href="/categoria/3" class="btn btn-outline-light fw-bold fs-4">TECNOLOGIA</a>
             </div>
-            <div class="col-3 d-flex flex-column text-white" id="box">
+            <div class="col-3 d-flex flex-column text-white big" id="box">
                 <a href="/categoria/1" class="btn btn-outline-light fw-bold fs-4">MOTORI</a>
             </div>
-            <div class="col-3 d-flex flex-column text-white" id="box">
+            <div class="col-3 d-flex flex-column text-white big" id="box">
                 <a href="/categoria/2" class="btn btn-outline-light fw-bold fs-4">INFORMATICA</a>
             </div>
-            <div class="col-3 d-flex flex-column text-white" id="box">
+            <div class="col-3 d-flex flex-column text-white big" id="box">
                 <a href="/categoria/4" class="btn btn-outline-light fw-bold fs-4">LIBRI</a>
             </div>
         </div>
