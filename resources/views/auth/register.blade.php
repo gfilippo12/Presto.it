@@ -5,12 +5,12 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-6 mx-auto border p-3 rounded" id="registerform">
-                <h1 class="text-dark">Registrati</h1>
+                <h1 class="text-dark">{{__('ui.register')}}</h1>
                 <form action="/register" method="POST">
                     @csrf
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="name">Nome</label>
+                            <label for="name">{{__('ui.name')}}</label>
                             <input type="name" name="name" id="name" class="form-control">
                             @error('name') 
                             <span class="small text-danger">{{ $message }}</span>
@@ -31,7 +31,7 @@
                             @enderror
                         </div>
                         <div class="col-12">
-                            <label for="password_confirmation">Conferma Password</label>
+                            <label for="password_confirmation">{{__('ui.passwordConfirmation')}}</label>
                             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
                             @error('password_confirmation') 
                             <span class="small text-danger">{{ $message }}</span>
@@ -40,7 +40,7 @@
                         <div>
                             <button class="btn btn-warning fw-bold">Registrati</button>
                             <div class="d-flex fs-6 gap-2 mt-3">
-                                <span>Sei già registrato?</span><a class="fw-bold text-decoration-none text-warning" href="/login">Accedi</a>
+                                <span>{{__('ui.alreadyRegister')}}</span><a class="fw-bold text-decoration-none text-warning" href="/login">{{__('ui.login')}}</a>
                             </div>
                         </div>
                     </div>

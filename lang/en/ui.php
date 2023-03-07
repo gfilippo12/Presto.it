@@ -7,11 +7,21 @@ return [
     'sellBtn' => 'Sell!',
     'buyBtn' => 'Buy!',
 
+    // form-login
+    'answerForm' => 'First time on Presto.it?',
+
+    // form-register
+    'name' => 'Name',
+    'passwordConfirmation' => 'Confirm password',
+    'alreadyRegister' => 'Are you already registered?',
+
     // navbar
     'announcementsLink' => 'Announcements',
     'announcementCreate' => 'Create announcement',
     'revisorLink' => 'Revisor zone',
     'backBtn' => 'Logout',
+    'login' => 'Login',
+    'register' => 'Register',
 
     // categorie
     'categoryTitle' => 'Our categories',
@@ -21,7 +31,7 @@ return [
     'tecnologia' => 'TECHNOLOGY',
     'motori' => 'MOTORS',
     'informatica' => 'INFORMATICS',
-    'libri' => 'LIBRI',
+    'libri' => 'BOOOKS',
 
     // i nostri annunci
     'allAnnouncements' => 'Our announcements',

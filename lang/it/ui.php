@@ -7,11 +7,21 @@ return [
     'sellBtn' => 'Vendi!',
     'buyBtn' => 'Acquista!',
 
+    // form-login
+    'answerForm' => 'Prima volta Presto.it?',
+
+    // form-register
+    'name' => 'Nome',
+    'passwordConfirmation' => 'Conferma password',
+    'alreadyRegister' => 'Sei già registrato?',
+
     // navbar
     'announcementsLink' => 'Annunci',
     'announcementCreate' => 'Crea Annuncio',
     'revisorLink' => 'Zona revisore',
     'backBtn' => 'Esci',
+    'login' => 'Accedi',
+    'register' => 'Registrati',
 
     // categorie
     'categoryTitle' => 'Le nostre categorie',

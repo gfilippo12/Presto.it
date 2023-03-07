@@ -24,7 +24,7 @@ Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement
 
 Route::get('/dettaglio/annuncio/{announcement}',[AnnouncementController::class, 'showAnnouncement'])->middleware('auth')->name('announcements.show');
 
-Route::get('/tutti/annunci',[AnnouncementController::class, 'indexAnnouncement'])->middleware('auth')->name('announcements.index');
+Route::get('/tutti/annunci',[AnnouncementController::class, 'indexAnnouncement'])->name('announcements.index');
 
 
 //* Home revisore

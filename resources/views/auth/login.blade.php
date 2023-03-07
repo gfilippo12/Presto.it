@@ -5,7 +5,7 @@
     <div class="container justify-content-center" >
         <div class="row">
             <div class="col-6 mx-auto border p-3 rounded" id="loginform">
-                <h1 class="text-dark">Accedi</h1>
+                <h1 class="text-dark">{{__('ui.login')}}</h1>
                 <form action="/login" method="POST">
                     @csrf
                     <div class="row g-3">
@@ -24,9 +24,9 @@
                             @enderror
                         </div>
                         <div>
-                            <button class="btn btn-warning fw-bold ">Accedi</button>
+                            <button class="btn btn-warning fw-bold ">{{__('ui.login')}}</button>
                             <div class="d-flex fs-6 gap-2 mt-3">
-                                <span>Prima volta su Presto?</span><a class="fw-bold text-decoration-none text-warning" href="/register">Registrati</a>
+                                <span>{{__('ui.answerForm')}}</span><a class="fw-bold text-decoration-none text-warning" href="/register">{{__('ui.register')}}</a>
                             </div>
                         </div>
                     </div>
