@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreAnnouncementRequest;
+use App\Mail\ContactSeller;
 use App\Models\Announcement;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -86,6 +89,11 @@ class UserController extends Controller
         $announcement->delete();
 
         return redirect()->route('management.index')->with(['success' => 'Annuncio cancellato con successo']);
+    }
+    public function contact() {
+        Mail::to('admin@presto.it')->send( new ContactSeller(Auth::user()));
+        return redirect()->back()->with('message', 'La tua email è stata inviata con successo al venditore!');
+
     }
 }
 
