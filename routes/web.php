@@ -48,4 +48,7 @@ Route::get('/ricerca/annuncio',[FrontController::class, 'searchAnnouncements'])-
 //* Rotta per cambio lingua 
 Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'] )->name('set_language_local');
 
+//*Rotta per contattare il Venditore
+Route::get('/contatta/venditore', [UserController::class,'contact'])->middleware('auth')->name('contact');
+
 
