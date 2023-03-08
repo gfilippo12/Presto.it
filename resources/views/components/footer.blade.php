@@ -1,4 +1,4 @@
-<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark">
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark fontModal">
     
   <div class="container">
     <div class="row">
@@ -19,32 +19,26 @@
   <div class="container">
         
     <div class="row">
-        <div class=" col-3  text-white  ">
-          <h2> Contattaci</h2>
+        <div class=" col-4  text-white ">
+          <h2 id="sticky-footer1" class="mb-3"> Contattaci</h2>
           <div class="d-flex gap-2"><i class="bi bi-geo-alt"></i><p class=" text-white fs-5"> Via degli Sviluppatori web I\0, CAP 40030 IT</p></div>
           <div class="d-flex gap-2"><i class="bi bi-telephone"></i><p class=" text-white fs-5"> <a href="06-908070" class="text-decoration-none text-white">(+39)327 4333365 </a></p></div>
           <div class="d-flex gap-2"><i class="bi bi-envelope"></i></i><p class=" text-white fs-5"> info@presto.it</p></div>
         </div>
-        <div class="col-3 text-white">
-          <h2> Categorie</h2>
+        <div class="col-4 text-white text-center ">
+          <h2 id="sticky-footer1"> Categorie</h2>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Tecnologia </a></p></div>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Motori </a></p></div>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Informatica </a></p></div>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Libri </a></p></div>
         </div> 
-        <div class="col-3 text-white">
-          <h2> Quick Links</h2>
+        <div class="col-4 text-white text-center">
+          <h2 id="sticky-footer1"> Quick Links</h2>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Privacy</a></p></div>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Sicurezza </a></p></div>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Condizioni </a></p></div>
           <div><p class=" text-white"> <a href="#" class="text-decoration-none text-white fs-5">Regole </a></p></div>
-        </div>
-        <div class=" col-3 text-white  ">
-            
-            <h2 class="text-white">Vuoi lavorare con noi?</h2>
-            <p class="text-white">Entra a far parte del Team Presto.it con due semplici click </p>
-            <a href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Diventa Revisor</a>
-      </div> 
+        </div> 
     </div>
 
     
@@ -56,4 +50,9 @@
   </div>   
 </footer>
 
-
+{{-- <div class=" col-3 text-white  ">
+            
+  <h2 class="text-white">Vuoi lavorare con noi?</h2>
+  <p class="text-white">Entra a far parte del Team Presto.it con due semplici click </p>
+  <a href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Diventa Revisor</a>
+</div> --}}

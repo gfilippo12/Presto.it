@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 
+#sticky-footer{
+    font-size: 18px;
+}
+
+#sticky-footer1{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
 .fontModal
 {
     font-family: lato;
