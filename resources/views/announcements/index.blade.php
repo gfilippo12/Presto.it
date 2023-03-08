@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-2 d-flex justify-content-center mt-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">I Nostri Annunci</h1>
+                <h1 class="fontTitoli display-2 d-flex justify-content-center mt-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">I Nostri Annunci</h1>
             </div>
                 <div class="container-fluid">
                     <div class="row">

@@ -7,7 +7,7 @@
 
         <div class="container mt-4">
             <div class="row">
-                <h1 class="d-flex justify-content-center text-white display-2 tracking-in-contract-bck">Zona Revisor</h1>
+                <h1 class="d-flex justify-content-center text-white display-2 tracking-in-contract-bck fontTitoli">Zona Revisor</h1>
                 
             </div>
         </div>
@@ -110,13 +110,13 @@
 
     <h2 class="d-flex justify-content-center text-white">Tutti gli annunci</h2>
 
-    <table class="table table-bordered bg-light">
+    <table class="table table-bordered bg-light fontModal">
         <thead>
             <tr>
-                <td>Titolo</td>
-                <td>Categoria</td>
-                <td>Data</td>
-                <td>Stato</td>
+                <td class="fw-bold">Titolo</td>
+                <td class="fw-bold">Categoria</td>
+                <td class="fw-bold">Data</td>
+                <td class="fw-bold">Stato</td>
             </tr>
         </thead>
 
@@ -128,9 +128,9 @@
                     <td>{{$announcement->created_at->format('d/m/Y')}}</td>
                     <td>
                         @if($announcement->is_accepted)
-                            <p class="text-success">ACCETTATO</p> 
+                            <p class="text-success fw-bold">ACCETTATO</p> 
                         @else
-                            <p class="text-danger">RIFIUTATO</p> 
+                            <p class="text-danger fw-bold">RIFIUTATO</p> 
                         @endif
                     </td>
                     <td>
@@ -140,7 +140,7 @@
                                     <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement])}}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#acceptModal">Accetta</button>
+                                        <button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#acceptModal">ACCETTA</button>
                                         <div class="modal fade" id="acceptModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                             <div class="modal-content">
@@ -152,8 +152,8 @@
                                                 Sei sicuro di voler accettare l'annuncio?
                                                 </div>
                                                 <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                                                <button type="submit" class="btn btn-success">Accetta</button>
+                                                <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">ANNULLA</button>
+                                                <button type="submit" class="btn btn-success fw-bold">ACCETTA</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -164,20 +164,20 @@
                                     <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement])}}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rejectModal">Rifiuta</button>
+                                        <button type="button" class="btn btn-danger fw-bold" data-bs-toggle="modal" data-bs-target="#rejectModal">RIFIUTA</button>
                                         <div class="modal fade" id="rejectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                <h1 class="fontModal modal-title fs-5 fw-bold" id="exampleModalLabel">RIFIUTA ANNUNCIO!</h1>
+                                                <h1 class="fontModal modal-title fs-3 fw-bold" id="exampleModalLabel">RIFIUTA ANNUNCIO!</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body fontModal fs-5">
                                                 Sei sicuro di voler rifiutare l'annuncio?
                                                 </div>
                                                 <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                                                <button type="submit" class="btn btn-danger">Rifiuta</button>
+                                                <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">ANNULLA</button>
+                                                <button type="submit" class="btn btn-danger fw-bold">RIFIUTA</button>
                                                 </div>
                                             </div>
                                             </div>

@@ -5,7 +5,12 @@
 
 .fontModal
 {
-    font-family: lato;
+    font-family: lato !important;
+}
+
+.fontTitoli
+{
+    font-family: Bebas Neue;
 }
 
 
@@ -95,7 +100,6 @@
 
 /* Body */
 body {
-    font-family: 'Bebas Neue';
     overflow-x: hidden;
     height: 100%;
 }
