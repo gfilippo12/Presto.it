@@ -7,7 +7,7 @@
         {{-- Header --}}
         <div class="row">
                 <div class="col-12 mx-auto ">
-                    <h1 class="first-text"><span class="tracking-in-contract-bck ">{{__('ui.entryTitle')}} <br> {{__('ui.entryTitle2')}} <br>{{__('ui.entryTitle3')}}</h1>
+                    <h1 class="first-text fontTitoli"><span class="tracking-in-contract-bck ">{{__('ui.entryTitle')}} <br> {{__('ui.entryTitle2')}} <br>{{__('ui.entryTitle3')}}</h1>
                     
                     <div class="d-grid gap-2 d-md-block ">
                         <a href="{{ route('announcements.create')}}" class="heartbeat  btn btn-lg btn-outline-warning text-white border border-light border-3" id="button1">{{__('ui.sellBtn')}}</a>
@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 mx-auto">
-                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">{{__('ui.categoryTitle')}}</h2>
+                <h2 class="fw-bold text-dark d-flex justify-content-center fontTitoli" id="recenti">{{__('ui.categoryTitle')}}</h2>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@
     <div class="container-fluid" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="row">
             <div class="col-12 mx-auto">
-                <h2 class="fw-bold text-dark d-flex justify-content-center" id="recenti">{{__('ui.allAnnouncements')}}</h2>
+                <h2 class="fontTitoli fw-bold text-dark d-flex justify-content-center" id="recenti">{{__('ui.allAnnouncements')}}</h2>
             </div>
             {{-- card component --}}
 
