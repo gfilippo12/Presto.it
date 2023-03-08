@@ -140,14 +140,48 @@
                                     <form action="{{route('revisor.accept_announcement', ['announcement'=>$announcement])}}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="btn btn-success">Accetta</button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#acceptModal">Accetta</button>
+                                        <div class="modal fade" id="acceptModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h1 class="fontModal fw-bold modal-title fs-3" id="exampleModalLabel">Accetta Annuncio!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body fontModal fs-5">
+                                                Sei sicuro di voler accettare l'annuncio?
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                                                <button type="submit" class="btn btn-success">Accetta</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="col-6">
                                     <form action="{{route('revisor.reject_announcement', ['announcement'=>$announcement])}}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="btn btn-danger">Rifiuta</button>
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rejectModal">Rifiuta</button>
+                                        <div class="modal fade" id="rejectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h1 class="fontModal modal-title fs-5 fw-bold" id="exampleModalLabel">RIFIUTA ANNUNCIO!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                Sei sicuro di voler rifiutare l'annuncio?
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                                                <button type="submit" class="btn btn-danger">Rifiuta</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
