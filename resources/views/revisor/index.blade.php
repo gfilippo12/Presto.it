@@ -25,11 +25,11 @@
         <div class="row">
             <div class="col-12">
                 <div>
-                    <table class="table  table-bordered bg-light">
+                    <table class="table  table-bordered bg-light fontModal">
                         <thead>
-                            <td>Titolo</td>
-                            <td>Descrizione</td>
-                            <td>Pubblicato</td>
+                            <td class="fw-bold">Titolo</td>
+                            <td class="fw-bold">Descrizione</td>
+                            <td class="fw-bold">Pubblicato</td>
                         </thead>
 
                         <tbody>
