@@ -1,6 +1,6 @@
-<div>
+<div id="announcementbackground">
 
-    <div class="container mt-5">
+    <div class="container m-5">
         <div class="row">
             <div class="col-6 mx-auto rounded p-3" id="announcementContainer">
                 <h2 class="text-dark fw-bold">CREA IL TUO ANNUNCIO</h2>
@@ -75,13 +75,14 @@
                             @endif
                         </div>
 
-                            <button type="submit" class="btn btn-warning shadow-lg px-4 py-2">
-                                Crea
-                            </button>
+                        <button type="submit" class="btn btn-warning shadow-lg px-4 py-2">
+                            Crea
+                        </button>
                         
                     </form>
             </div>
         </div>
     </div>
-    
 </div>
+
+

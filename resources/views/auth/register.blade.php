@@ -2,7 +2,7 @@
 
 <div class="container-fluid g-0" id="registerbackground">
     <x-nav></x-nav>
-    <div class="container mt-5">
+    <div class="container m-1">
         <div class="row">
             <div class="col-6 mx-auto border p-3 rounded" id="registerform">
                 <h1 class="text-dark">{{__('ui.register')}}</h1>

@@ -16,7 +16,7 @@ class UserController extends Controller
     {
         $announcements = Announcement::where('user_id', auth()->user()->id)->orderBy('id', 'desc')->paginate(10);
 
-        return view('management.index', compact('$announcements'));
+        return view('management.index', compact('announcements'));
     }
 
     public function create()
