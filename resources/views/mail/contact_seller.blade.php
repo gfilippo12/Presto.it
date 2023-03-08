@@ -15,10 +15,12 @@
             
         </style>
         <div>
-            <h1>L' Utente {{$user->name}} ti ha chiesto informazioni in merito al tuo annuncio su Presto.it</h1>
+            <h1>L' Utente {{$data['name']}} ti ha chiesto informazioni in merito al tuo annuncio su Presto.it</h1>
             
-            <h2>Ecco i suoi dati</h2>
-            <p>Email: {{$user->email}}</p>
+            <h2>Ecco i suoi dati:</h2>
+            <p>Email: {{$data['email']}}</p>
+            
+            <h2>L annuncio in questione è {{$data['titolo']}}</h2>
 
         
             

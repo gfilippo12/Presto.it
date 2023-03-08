@@ -15,11 +15,11 @@ class ContactSeller extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $user;
+    public $data;
 
-    public function __construct(User $user)
+    public function __construct($data)
     {
-        $this->user=$user;
+        $this->data = $data;
     }
     public function build() {
         return $this->from('presto.it@noreplay.com')->view('mail.contact_seller');
