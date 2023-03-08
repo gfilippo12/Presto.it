@@ -4,11 +4,9 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">{{__('ui.announcementsLink')}}</a>
-                </li>
                 {{-- Languages --}}
             <li class="nav-item">
                 <x-_locale lang="en" nation='gb'/>  
@@ -16,6 +14,10 @@
             <li class="nav-item">
                 <x-_locale lang="it" nation='it'/>  
             </li>
+                <li class="nav-item">
+                    <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">{{__('ui.announcementsLink')}}</a>
+                </li>
+                
             
             @guest
             <li class="nav-item">
