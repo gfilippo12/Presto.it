@@ -19,7 +19,7 @@
                                 <h5 class="card-title fs-2 text-dark">{{ $announcement->title }}</h5>
                                 <p class="card-text">{{ $announcement->body }}</p>
                                 <p class="card-text">{{ $announcement->price }}</p>
-                                <a href="" class="btn btn-light shadow">Visualizza</a>
+                                <a href="{{route('announcements.show', compact('announcement'))}}" class="btn btn-light shadow">Visualizza</a>
                                 <a href="" class="my-2 border-top pt-2 border-dark card-link shadow btn btn-dark">Categoria: {{ $announcement->category->name }}</a>
                                 <p class="card-footer border border-light text-dark">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
                             </div>

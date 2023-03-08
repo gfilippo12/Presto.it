@@ -123,7 +123,7 @@
         <tbody>
             @foreach ($announcements as $announcement)
                 <tr>
-                    <td>{{ $announcement->title }}</td>
+                    <td><a class="text-decoration-none text-dark" href="{{route('announcements.show', compact('announcement'))}}">{{ $announcement->title }}</a></td>
                     <td>{{ $announcement->category->name }}</td>
                     <td>{{$announcement->created_at->format('d/m/Y')}}</td>
                     <td>
