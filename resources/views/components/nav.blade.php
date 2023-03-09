@@ -9,10 +9,11 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 {{-- Languages --}}
             <li class="nav-item">
-                <x-_locale lang="en" nation='gb'/>  
+                
+                <x-_locale lang="it" nation='it'/>  
             </li>
             <li class="nav-item">
-                <x-_locale lang="it" nation='it'/>  
+                <x-_locale lang="en" nation='gb'/>  
             </li>
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">{{__('ui.announcementsLink')}}</a>
