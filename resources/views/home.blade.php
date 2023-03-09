@@ -83,6 +83,8 @@
             {{-- card component --}}
 
             <x-card :annunci="$announcements"/>
+
+           
                 
 
         </div>
