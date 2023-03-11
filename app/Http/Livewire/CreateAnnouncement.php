@@ -83,7 +83,7 @@ class CreateAnnouncement extends Component
                 //$this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
                 $newFileName = "announcements/{$this->announcement->id}";
                 $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
-
+                Auth::user()->announcements()->save($this->announcement);
                 dispatch(new ResizeImage($newImage->path , 400 , 300));
             }
 

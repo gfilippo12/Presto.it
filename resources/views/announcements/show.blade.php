@@ -1,7 +1,7 @@
 <x-layout>
     {{-- Navbar --}}
     <x-nav></x-nav>
-    <h1 class="display-2 d-flex justify-content-center fontTitoli" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">Dettagli Annuncio</h1>
+    <h1 class="display-2 d-flex justify-content-center fontTitoli">Dettagli Annuncio</h1>
 
 
     <div class="container d-flex justify-content-center bgh1 border rounded mb-5">
@@ -15,8 +15,11 @@
                             <h5 class="card-title text-dark fs-2">{{ $announcement->title }}</h5>
                             <p class="card-text">{{ $announcement->body }}</p>
                             <p class="card-text">€{{ $announcement->price }}</p>
-                            <p class="card-footer border border-light text-dark">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
-                            <a href="{{route('contact', compact('announcement'))}}" class="btn btn-warning big">Contatta {{ $announcement->user->name ?? 'Venditore' }}</a>
+                            <p class="card-footer border border-light text-dark">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name}}</p>
+                            @if ($announcement->user_id != Auth::id())
+                                <a href="{{route('contact', compact('announcement'))}}" class="btn btn-warning big">Contatta {{ $announcement->user->name ?? 'Venditore' }}</a>
+                            @endif
+                            
                         </div>
                     </div>
                 </div>
