@@ -16,7 +16,7 @@
                             <p class="card-text">{{ $announcement->body }}</p>
                             <p class="card-text">€{{ $announcement->price }}</p>
                             <p class="card-footer border border-light text-dark">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
-                            <a href="{{route('contact', compact('announcement'))}}" class="btn btn-warning big">Contatta {{ $announcement->user->name ?? '' }}</a>
+                            <a href="{{route('contact', compact('announcement'))}}" class="btn btn-warning big">Contatta {{ $announcement->user->name ?? 'Venditore' }}</a>
                         </div>
                     </div>
                 </div>
