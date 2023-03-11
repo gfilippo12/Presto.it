@@ -91,7 +91,18 @@
     </div>
 
 
-
+    {{-- Card for Become Revisor --}}
+    <div class="container border rounded border-warning mt-5">
+        <div class="row">
+            <div class="col-12 ">
+                <h2>Vuoi un’entrata extra? <br>
+                    Conosci qualcuno che la vorrebbe? <br></h2>
+                <p>Entra a far parte del <span class="fw-bold">Team Revisor</span> di
+                    Presto.it</p>
+                <a  href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Diventa Revisor</a>
+            </div>
+        </div>
+    </div>
     
     
     {{-- Button for Scroll Up --}}
