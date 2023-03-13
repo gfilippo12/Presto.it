@@ -8,10 +8,18 @@
         {{-- AOS CDN --}}
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         @livewireStyles
+
+{{-- DA RIVEDERE CON GIOVANNI MIN 16:05 USER STORY 7 --}}
+
+<link rel="stylesheet" href="https://cdnjs.cloudfire.com/ajax/libs/front-awesome/6.0.0/css/all.min.css">
+
+
+
+
     </head>
     <body>
         
-            polo
+            
         
             {{ $slot }}
         
