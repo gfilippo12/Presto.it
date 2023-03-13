@@ -53,10 +53,6 @@ $srcPath = storage_path('app/public/'. $i->path);
             $vertices = $face->getBoundingPoly()->getVertices();
 
             $bounds =[];
-<<<<<<< HEAD
-=======
-
->>>>>>> 0d06208315a3a9878c462181696b9224f9ba74da
             // [
             //     [120 , 120],
             //     [120 , 120],
@@ -81,13 +77,8 @@ $srcPath = storage_path('app/public/'. $i->path);
         ->watermarkFit(Manipulations::FIT_STRETCH);
 
         $image->save($srcPath);
-<<<<<<< HEAD
-        
-        $imageAnnotator->close();
-=======
         }
         $imageAnnotator->close();
     }
->>>>>>> 0d06208315a3a9878c462181696b9224f9ba74da
 }
 
