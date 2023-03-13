@@ -100,7 +100,7 @@
                 <p>Entra a far parte del <span class="fw-bold">Team Revisor</span> di
                     Presto.it</p>
                 <a  href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Diventa Revisor</a>
-                <img class="" src="" alt=""  id="imgrevisor">
+                
             </div>
         </div>
     </div>

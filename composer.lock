@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7c03933da00cd423abc348028d99c9c",
+    "content-hash": "5b0fd087b8b011b5302abc3f9847fb9c",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6543,16 +6543,16 @@
         },
         {
             "name": "teamtnt/laravel-scout-tntsearch-driver",
-            "version": "v12.2.0",
+            "version": "v12.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/teamtnt/laravel-scout-tntsearch-driver.git",
-                "reference": "1ce3fe74e94c81d94fbc2c898c004fdbf26b12da"
+                "reference": "d3c9424b752544c883da016694952bcaf9259e9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/teamtnt/laravel-scout-tntsearch-driver/zipball/1ce3fe74e94c81d94fbc2c898c004fdbf26b12da",
-                "reference": "1ce3fe74e94c81d94fbc2c898c004fdbf26b12da",
+                "url": "https://api.github.com/repos/teamtnt/laravel-scout-tntsearch-driver/zipball/d3c9424b752544c883da016694952bcaf9259e9a",
+                "reference": "d3c9424b752544c883da016694952bcaf9259e9a",
                 "shasum": ""
             },
             "require": {
@@ -6561,7 +6561,7 @@
                 "illuminate/pagination": "~5.4|^6.0|^7.0|^8.0|^9.0|^10.0",
                 "illuminate/queue": "~5.4|^6.0|^7.0|^8.0|^9.0|^10.0",
                 "illuminate/support": "~5.4|^6.0|^7.0|^8.0|^9.0|^10.0",
-                "laravel/scout": "7.*|^8.0|^8.3|^9.0",
+                "laravel/scout": "7.*|^8.0|^8.3|^9.0|^10",
                 "php": ">=7.1|^8",
                 "teamtnt/tntsearch": "2.7.0|^2.8|^3.0"
             },
@@ -6607,9 +6607,9 @@
             ],
             "support": {
                 "issues": "https://github.com/teamtnt/laravel-scout-tntsearch-driver/issues",
-                "source": "https://github.com/teamtnt/laravel-scout-tntsearch-driver/tree/v12.2.0"
+                "source": "https://github.com/teamtnt/laravel-scout-tntsearch-driver/tree/v12.4.0"
             },
-            "time": "2023-01-30T15:08:48+00:00"
+            "time": "2023-03-07T08:53:45+00:00"
         },
         {
             "name": "teamtnt/tntsearch",
