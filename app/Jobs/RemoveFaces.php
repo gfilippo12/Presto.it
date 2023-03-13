@@ -28,7 +28,6 @@ class RemoveFaces implements ShouldQueue
         $this->announcement_image_id = $announcement_image_id;
     }
 
-
     /**
      * Execute the job.
      @return void
@@ -53,7 +52,6 @@ $srcPath = storage_path('app/public/'. $i->path);
             $vertices = $face->getBoundingPoly()->getVertices();
 
             $bounds =[];
-        }
             // [
             //     [120 , 120],
             //     [120 , 120],
@@ -81,5 +79,5 @@ $srcPath = storage_path('app/public/'. $i->path);
         $image->save($srcPath);
         
         $imageAnnotator->close();
-        }
 }
+
