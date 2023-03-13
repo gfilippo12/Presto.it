@@ -11,7 +11,7 @@
 
 {{-- DA RIVEDERE CON GIOVANNI MIN 16:05 USER STORY 7 --}}
 
-<link rel="stylesheet" href="https://kit.fontawesome.com/ca8182b793.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
 
 
 

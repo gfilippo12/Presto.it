@@ -3,10 +3,11 @@
 namespace App\Jobs;
 
 use App\Models\Image;
-use Spatie\Image\Image as SpatieImage;
 use App\Models\Announcement;
 use Illuminate\Bus\Queueable;
+use Spatie\Image\Manipulations;
 use Illuminate\Queue\SerializesModels;
+use Spatie\Image\Image as SpatieImage;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -52,6 +53,10 @@ $srcPath = storage_path('app/public/'. $i->path);
             $vertices = $face->getBoundingPoly()->getVertices();
 
             $bounds =[];
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d06208315a3a9878c462181696b9224f9ba74da
             // [
             //     [120 , 120],
             //     [120 , 120],
@@ -62,7 +67,6 @@ $srcPath = storage_path('app/public/'. $i->path);
             foreach ($vertices as $vertex) {
                 $bounds[] = [$vertex->getX(), $vertex->getY()];
             }
-        
 
         $w = $bounds[2][0] - $bounds[0][0];
         $h = $bounds[2][1] - $bounds[0][1];
@@ -77,7 +81,13 @@ $srcPath = storage_path('app/public/'. $i->path);
         ->watermarkFit(Manipulations::FIT_STRETCH);
 
         $image->save($srcPath);
+<<<<<<< HEAD
         
         $imageAnnotator->close();
+=======
+        }
+        $imageAnnotator->close();
+    }
+>>>>>>> 0d06208315a3a9878c462181696b9224f9ba74da
 }
 

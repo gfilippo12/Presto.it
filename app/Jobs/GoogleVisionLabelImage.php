@@ -61,8 +61,3 @@ $imageAnnotator->close();
     
 }
 }
-
-  
-
-
-   
