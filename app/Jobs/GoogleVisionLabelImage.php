@@ -48,11 +48,11 @@ class GoogleVisionLabelImage implements ShouldQueue
 if($labels) {
     $result = [];
     foreach($labels as $label) {
-        $result[] = $label->getDescription;
+        $result[] = $label->getDescription();
     }
 
     //* echo json
-    $i->labels= $result;
+    $i->labels = $result;
     $i->save();
 }
 

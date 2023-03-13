@@ -41,7 +41,7 @@ class GoogleVisionSafeSearch implements ShouldQueue
 
     //* IMPOSTA LA VARIABILE DI AMIENTE GOOGLE SAFE
 
-putenv('GOOGLE_APPLICATION_CREDENTIALS=' .base_path('google_credential.json'));
+putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
 
 $imageAnnotator = new ImageAnnotatorClient();
 $response = $imageAnnotator->safeSearchDetection($image);
@@ -55,8 +55,6 @@ $spoof = $safe->getSpoof();
 $violence = $safe->getViolence();
 $racy = $safe->getRacy();
 
-
-//* manca il file json da mettere min 8:47 user story 7 che dopo essere inserito va su git ignore
 
 $likelihoodName = [
     'text-secondary fas fa-circle', 'text-success fas fa-circle','text-success fas fa-circle',
