@@ -35,6 +35,18 @@ return [
 
     // i nostri annunci
     'allAnnouncements' => 'I nostri annunci',
-    'viewBtn' => 'visualizza',
-    'categoryBtn' => 'categoria:',
+    'viewBtn' => 'Visualizza',
+    'categoryBtn' => 'Categoria:',
+    'publish' => 'Pubblicato il:',
+
+    //form crea annuncio
+    'create-h1' => 'CREA IL TUO ANNUNCIO',
+    'category' => 'Categoria',
+    'category-label' => 'Scegli la categoria',
+    'announcement-title' => 'Titolo Annuncio',
+    'description-form' => 'Descrizione',
+    'price-form' => 'Prezzo',
+    'btn-create' => 'Crea',
+    'img-preview' => 'Anteprima immagine:',
+    'delete-img' => 'Cancella immagine'
 ];
