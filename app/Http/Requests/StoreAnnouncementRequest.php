@@ -41,4 +41,4 @@ class StoreAnnouncementRequest extends FormRequest
     }
 }
 
-?>
+

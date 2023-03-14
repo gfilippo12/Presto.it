@@ -15,6 +15,9 @@
             <li class="nav-item">
                 <x-_locale lang="en" nation='gb'/>  
             </li>
+            <li class="nav-item">
+                <x-_locale lang="es" nation='es'/>  
+            </li>
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">{{__('ui.announcementsLink')}}</a>
                 </li>
