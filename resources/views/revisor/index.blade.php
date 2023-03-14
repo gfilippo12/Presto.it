@@ -41,17 +41,6 @@
                 </div>
                 <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                    @if ($announcement_to_check->images)
-                    @foreach ($image->watermark('watermark.png')
-                                    ->watermarkOpacity(50)
-                                    ->watermarkPosition(Manipulations::POSITION_TOP_LEFT)
-                                    ->watermarkPadding(10, 10, Manipulations::UNIT_PERCENT)
-                                    ->watermarkHeight(50, Manipulations::UNIT_PERCENT)
-                                    ->watermarkWidth(100, Manipulations::UNIT_PERCENT)
-                                    ->watermarkFit(Manipulations::FIT_CROP);
-                          );
-                    @endforeach
-                    @endif
                     
                     @if ($announcement_to_check->images)
                     <div class="carousel-inner">
