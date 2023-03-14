@@ -69,24 +69,12 @@ $srcPath = storage_path('app/public/'. $i->path);
 
         $image = SpatieImage::load($srcPath);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
         // $image->watermark(base_path('resources/img/smiley.png')) //* file da selezionare per coprire faccia 8:00 user 8
         // ->watermarkPosition('top-right')
         // ->watermarkPadding($bounds[0][0], $bounds[0][1])
         // ->watermarkWidth($w, Manipulations::UNIT_PIXELS)
         // ->watermarkHeight($h, Manipulations::UNIT_PIXELS)
         // ->watermarkFit(Manipulations::FIT_STRETCH);
-=======
-=======
->>>>>>> Stashed changes
-        $image->watermark(base_path('resources/logo/logo_presto.it.png')) //* file da selezionare per coprire faccia 8:00 user 8
-        ->watermarkPosition('top-right')
-        ->watermarkPadding($bounds[0][0], $bounds[0][1])
-        ->watermarkWidth($w, Manipulations::UNIT_PIXELS)
-        ->watermarkHeight($h, Manipulations::UNIT_PIXELS)
-        ->watermarkFit(Manipulations::FIT_STRETCH);
->>>>>>> Stashed changes
 
         $image->save($srcPath);
         }
