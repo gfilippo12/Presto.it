@@ -7,17 +7,34 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                {{-- Languages --}}
-            <li class="nav-item">
-                
-                <x-_locale lang="it" nation='it'/>  
-            </li>
-            <li class="nav-item">
-                <x-_locale lang="en" nation='gb'/>  
-            </li>
-            <li class="nav-item">
-                <x-_locale lang="es" nation='es'/>  
-            </li>
+
+                {{-- <div class="dropdown">
+                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-globe"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li> <x-_locale lang="it" nation='it'/></li>
+                          <li><x-_locale lang="en" nation='gb'/></li>
+                          <li><x-_locale lang="es" nation='es'/></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div> --}}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"> <x-_locale lang="it" nation='it'/></li>
+                        <li class="nav-item"><x-_locale lang="en" nation='gb'/></li>
+                        <li class="nav-item"><x-_locale lang="es" nation='es'/></li>
+                      </ul>
+                </li>
+
+
                 <li class="nav-item">
                     <a class="nav-link" area-current="page" href="{{route('announcements.index')}}">{{__('ui.announcementsLink')}}</a>
                 </li>
