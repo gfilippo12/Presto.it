@@ -1,10 +1,14 @@
 <x-layout>
     {{-- Navbar --}}
     <x-nav></x-nav>
-    <h1 class="display-2 d-flex justify-content-center fontTitoli">Dettagli Annuncio</h1>
 
+    <div id="announcementbackground">
 
-    <div class="container d-flex justify-content-center bgh1 border rounded mb-5">
+    <h1 class="display-2 d-flex justify-content-center fontTitoli text-white">Dettagli Annuncio</h1>
+
+    
+
+    <div class="container d-flex justify-content-center">
         <div class="row mb-5">
                 <div class="col-5">
                     <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200' }}" alt="" class="card-img-top p-3 rounded big img-fluid">
@@ -25,6 +29,8 @@
                 </div>
         </div> 
     </div>
+
+</div>
     
 </x-layout>
 
