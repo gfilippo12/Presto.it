@@ -31,7 +31,7 @@ return [
     'tecnologia' => 'TECHNOLOGY',
     'motori' => 'MOTORS',
     'informatica' => 'INFORMATICS',
-    'libri' => 'BOOOKS',
+    'libri' => 'BOOKS',
 
     // i nostri annunci
     'allAnnouncements' => 'Our announcements',
