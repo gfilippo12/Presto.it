@@ -4,6 +4,17 @@
         {{-- Navbar --}}
         <x-nav></x-nav>
 
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 mx auto">
+                    @if (session()->has('message'))
+                        <div class="flex flex-row justify-center my-2 alert alert-success">
+                            {{ session('message') }}
+                        </div>
+                    @endif
+                </div>
+            </div>
+        
+
         {{-- Header --}}
         <div class="row">
                 <div class="col-12 mx-auto ">
@@ -92,6 +103,9 @@
 
 
     {{-- Card for Become Revisor --}}
+
+    
+
     <div class="container border rounded border-warning mt-5">
         <div class="row">
             <div class="col-12 ">

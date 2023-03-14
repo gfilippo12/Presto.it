@@ -39,19 +39,74 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
 
                     
-                    @if ($announcement_to_check->images)
-                    <div class="carousel-inner">
-                        @foreach ($announcement_to_check->images as $image)
-                        <div class="carousel-item @if($loop->first)active @endif">  
-                            {{-- <img src="{{Storage::url($image->path) }}" class="img-fluid p-3 rounded" 
-                            alt="..."> --}}
-                            <img src="{{ $image->getUrl(400,300) }}" class="img-fluid p-3 rounded" alt="">
+                                @if ($announcement_to_check->images)
+                                <div class="carousel-inner">
+                                    @foreach ($announcement_to_check->images as $image)
+                                    <div class="carousel-item @if($loop->first)active @endif">  
+                                        {{-- <img src="{{Storage::url($image->path) }}" class="img-fluid p-3 rounded" 
+                                        alt="..."> --}}
+                                        <img src="{{ $image->getUrl(400,300) }}" class="img-fluid p-3 rounded" alt="">
+                                        <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#showCarousel" data-bs-slide="prev" data-bs-theme="dark">
+                                            <span class="text-dark carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden ">Previous</span>
+                                         </button>
+                                         <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#showCarousel" data-bs-slide="next" data-bs-theme="dark">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                         </button>
+                                    </div>
+                                    
+                                    @endforeach
+                                    </div>
+                                    @else
+            
+                                     <div class="carousel-item">
+                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        alt="...">
+                                     </div>
+            
+                                     <div class="carousel-item">
+                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        alt="...">
+            
+                                     </div>
+                                     <div class="carousel-item">
+                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        alt="...">
+            
+                                     </div>
+                                     <div class="carousel-item">
+                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        alt="...">
+                                     </div>
+                                     @endif
                         </div>
-                        <div class="col-md-3 border-end">
-                            <h5 class="tc-accent mt-3">Tags</h5>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="card-body border border-3 p-2 rounded mt-3">
+                                        <h5 class="tc-accent ">Revisiona Immagini</h5>
+                                        <p>Adulti: <span class="{{ $image->adult}}"></span></p>
+                                        <p>Satira: <span class="{{ $image->spoof}}"></span></p>
+                                        <p>Medicina: <span class="{{ $image->medical}}"></span></p>
+                                        <p>Violenza: <span class="{{ $image->violence}}"></span></p>
+                                        <p>Contenuto Razzista: <span class="{{ $image->racy}}"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card-body border p-2 border-3 rounded mt-3">
+                            <h5 class="tc-accent">Tags</h5>
                             <div class="p-2"> 
                                 @if ($image->labels)
                                 @foreach ($image->labels as $label)
@@ -59,63 +114,10 @@
                                 @endforeach
                                 @endif
                             </div>
-                            
-
                         </div>
-                        @endforeach
-                        </div>
-                        @else
-
-                         <div class="carousel-item">
-                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
-                            alt="...">
-                         </div>
-
-                         <div class="carousel-item">
-                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
-                            alt="...">
-
-                         </div>
-                         <div class="carousel-item">
-                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
-                            alt="...">
-
-                         </div>
-                         <div class="carousel-item">
-                            <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
-                            alt="...">
-                         </div>
-                         @endif
-
-                         <div>
-                            <div>
-                                <div class="col-md-3">
-                                    <div class="card-body">
-                                        <h5 class="tc-accent">Revisiona Immagini</h5>
-                                        <p>Adulti: <span class="{{ $image->adult}}"></span></p>
-                                        <p>Satira: <span class="{{ $image->spoof}}"></span></p>
-                                        <p>Medicina: <span class="{{ $image->medical}}"></span></p>
-                                        <p>Violenza: <span class="{{ $image->violence}}"></span></p>
-                                        <p>Contenuto Razzista: <span class="{{ $image->racy}}"></span></p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                         </div>
-                   
-                
-                    
-                
-                         <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                         </button>
-                         <button class="carousel-control-next" type="button" data-bs-target="#showCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                         </button>
                     </div>
+                </div>
+            </div>
                     <div class="container d-flex mb-5 justify-content-center">
                         <div class="row">
                             <div class="col-6">
