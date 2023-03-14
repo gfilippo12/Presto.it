@@ -45,7 +45,7 @@ class ResizeImage implements ShouldQueue
                         ->crop(Manipulations::CROP_CENTER , $w, $h)
                         ->save($destPath);
                         
-                    $cropimage2=Image::load($destPath)->watermark('')
+                    $cropimage2=Image::load($destPath)->watermark(base_path('resources/logo/logo-presto.it.png'))
                                     ->watermarkOpacity(50)
                                     ->watermarkPosition(Manipulations::POSITION_TOP_LEFT)
                                     ->watermarkPadding(10, 10, Manipulations::UNIT_PERCENT)
