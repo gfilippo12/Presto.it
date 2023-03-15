@@ -69,7 +69,7 @@ $srcPath = storage_path('app/public/'. $i->path);
 
         $image = SpatieImage::load($srcPath);
 
-        $image->watermark(base_path('resources/logo/logo-presto.it.png')) //* file da selezionare per coprire faccia 8:00 user 8
+        $image->watermark(base_path('resources/logo/smile.png')) //* file da selezionare per coprire faccia 8:00 user 8
         ->watermarkPosition('top-right')
         ->watermarkPadding($bounds[0][0], $bounds[0][1])
         ->watermarkWidth($w, Manipulations::UNIT_PIXELS)
