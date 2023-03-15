@@ -6,7 +6,7 @@
             <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300) : 'https://picsum.photos/200' }}" alt="" class="card-img-top p-3 rounded big">
             <div class="card-body">
                 <h5 class="card-title fs-2" id="text">{{ $announcement->title }}</h5>
-                <p class="card-text">{{ $announcement->body }}</p>
+                <p class="card-text">{{Str::limit($announcement->body, 10) }}</p>
                 <p class="card-text">€{{ $announcement->price }}</p>
                 <a href= {{route('announcements.show', compact('announcement'))}} class="btn btn-light shadow">{{__('ui.viewBtn')}}</a>
                 <a href= {{route('categoryShow', ['category'=>$announcement->category])}} class="my-2 border-top pt-2 border-dark card-link shadow btn btn-dark">{{__('ui.categoryBtn')}} {{ $announcement->category->name }}</a>

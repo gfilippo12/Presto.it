@@ -52,17 +52,18 @@
                                         {{-- <img src="{{Storage::url($image->path) }}" class="img-fluid p-3 rounded" 
                                         alt="..."> --}}
                                         <img src="{{ $image->getUrl(400,300) }}" class="img-fluid p-3 rounded" alt="">
-                                        <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#showCarousel" data-bs-slide="prev" data-bs-theme="dark">
-                                            <span class="text-dark carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden ">Previous</span>
-                                         </button>
-                                         <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#showCarousel" data-bs-slide="next" data-bs-theme="dark">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                         </button>
+                                        
                                     </div>
                                     
                                     @endforeach
+                                    <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#showCarousel" data-bs-slide="prev" data-bs-theme="dark">
+                                        <span class="text-dark carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden ">Previous</span>
+                                     </button>
+                                     <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#showCarousel" data-bs-slide="next" data-bs-theme="dark">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                     </button>
                                     </div>
                                     @else
             
