@@ -67,22 +67,22 @@
                                     @else
             
                                      <div class="carousel-item">
-                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        <img src="resources/logo/logo-presto.it.png" class="img-fluid p-3 rounded" 
                                         alt="...">
                                      </div>
             
                                      <div class="carousel-item">
-                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        <img src="resources/logo/logo-presto.it.png" class="img-fluid p-3 rounded" 
                                         alt="...">
             
                                      </div>
                                      <div class="carousel-item">
-                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        <img src="resources/logo/logo-presto.it.png" class="img-fluid p-3 rounded" 
                                         alt="...">
             
                                      </div>
                                      <div class="carousel-item">
-                                        <img src="http://picsum.photos/id/27/1200/400" class="img-fluid p-3 rounded" 
+                                        <img src="resources/logo/logo-presto.it.png" class="img-fluid p-3 rounded" 
                                         alt="...">
                                      </div>
                                      @endif
