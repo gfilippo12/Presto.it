@@ -2,51 +2,52 @@
 return [
     // entrata
     'entryTitle' => 'PRESTO.IT',
-    'entryTitle2' => 'CONSEGNE IN',
-    'entryTitle3' => 'TUTTA ITALIA',
-    'sellBtn' => 'Vendi!',
-    'buyBtn' => 'Acquista!',
+    'entryTitle2' => 'ENTREGAS EN',
+    'entryTitle3' => 'TODA ITALIA',
+    'sellBtn' => 'Vender!',
+    'buyBtn' => 'Comprar!',
 
     // form-login
-    'answerForm' => 'Prima volta Presto.it?',
+    'answerForm' => '¿Primera vez en Presto.it?',
 
     // form-register
-    'name' => 'Nome',
-    'passwordConfirmation' => 'Conferma password',
-    'alreadyRegister' => 'Sei già registrato?',
+    'name' => 'Nombre de pila',
+    'passwordConfirmation' => 'Confirmar password',
+    'alreadyRegister' => '¿Ya estás registrado?',
 
     // navbar
-    'announcementsLink' => 'Annunci',
-    'announcementCreate' => 'Crea Annuncio',
-    'revisorLink' => 'Zona revisore',
-    'backBtn' => 'Esci',
-    'login' => 'Accedi',
-    'register' => 'Registrati',
+    'announcementsLink' => 'Anuncios',
+    'announcementCreate' => 'Crear Anuncio',
+    'revisorLink' => 'Area de revision',
+    'backBtn' => 'Sales',
+    'login' => 'Iniciar sesión',
+    'register' => 'Registrade',
 
     // categorie
-    'categoryTitle' => 'Le nostre categorie',
-    'searchbar' => 'Cerca in annunci...',
-    'searchBtn' => 'CERCA',
-    'categoryDropdown' => 'CATEGORIE',
+    'categoryTitle' => 'nuestras categorías',
+    'searchbar' => 'Buscar en anuncios...',
+    'searchBtn' => 'BUSCAR',
+    'categoryDropdown' => 'CATEGORIAS',
     'tecnologia' => 'TECNOLOGIA',
-    'motori' => 'MOTORI',
+    'motori' => 'MOTORES',
     'informatica' => 'INFORMATICA',
-    'libri' => 'LIBRI',
+    'libri' => 'LIBROS',
 
     // i nostri annunci
-    'allAnnouncements' => 'I nostri annunci',
-    'viewBtn' => 'Visualizza',
+    'allAnnouncements' => 'Nuestros anuncios
+    ',
+    'viewBtn' => 'Vista',
     'categoryBtn' => 'Categoria:',
-    'publish' => 'Pubblicato il:',
+    'publish' => 'Pubblicado en:',
 
     //form crea annuncio
-    'create-h1' => 'CREA IL TUO ANNUNCIO',
+    'create-h1' => 'CREA TU ANUNCIO',
     'category' => 'Categoria',
-    'category-label' => 'Scegli la categoria',
-    'announcement-title' => 'Titolo Annuncio',
-    'description-form' => 'Descrizione',
-    'price-form' => 'Prezzo',
-    'btn-create' => 'Crea',
-    'img-preview' => 'Anteprima immagine:',
-    'delete-img' => 'Cancella immagine'
+    'category-label' => 'Elige la categoria',
+    'announcement-title' => 'Titulo del Anuncio',
+    'description-form' => 'Descripción',
+    'price-form' => 'Precio',
+    'btn-create' => 'Crear',
+    'img-preview' => 'Vista previa de la imagen:',
+    'delete-img' => 'Eliminar imagen',
 ];
