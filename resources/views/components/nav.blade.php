@@ -63,7 +63,7 @@
             <li class="nav-item">
                 <a  class="nav-link" href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Diventa Revisor</a>
             </li>
-            @endif --}}
+            @endif ggggggggg --}}
             
     
             <li class="nav-item dropdown">
